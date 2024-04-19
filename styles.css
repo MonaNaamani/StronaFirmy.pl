@@ -1,0 +1,162 @@
+:root {
+    --accented: #10bbb5;
+    --primary: #222222;
+    --secondary: #7f7f7f;
+}
+
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: Georgia;
+}
+
+li {
+    list-style-type: none;
+}
+
+a {
+    text-decoration: none;
+}
+
+.body {
+    flex: 1;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+    min-height: 100vh;
+    margin-left: 50px;
+    margin-right: 50px;
+}
+
+.header-top, .footer {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    height: 80px;
+    color: var(--primary);
+}
+
+.logo {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    gap: 10px;
+}
+
+.logo-img {
+    height: 24px;
+    width: auto;
+}
+.logo-text {
+    font-size: 24px;
+    font-weight: 700;
+    margin-right: 30px;
+}
+
+.links {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    font-size: 20px;
+    gap: 40px;
+}
+
+.links li a {
+    padding: 20px 5px;
+    /* I'm using this to expand the hoverable area */
+}
+
+.show {
+    color: var(--primary);
+    transition: ease-out 0.1s;
+    transition: ease-in 0.1s;
+}
+
+a:hover {
+    transition: ease-out 0.1s;
+    transition: ease-in 0.1s;
+    text-decoration: underline;
+    text-decoration-color: var(--accented);
+    text-decoration-style: solid; 
+    text-decoration-thickness: 3px;
+    text-underline-position: under;
+}
+
+.hidden {
+    color: var(--secondary);
+    transition: ease-out 0.1s;
+    transition: ease-in 0.1s;
+}
+
+.brightness {
+    font-size: 20px;
+    margin-left: 30px;
+}
+
+.header {
+    align-self: center;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    gap: 50px;
+}
+
+.header-text {
+    display: flex;
+    flex-direction: column;
+    gap: 20px;
+    width: 60%;
+}
+
+.main-text, .secondary-text {
+    text-align: center;
+}
+
+.main-text {
+    font-size: 32px;
+    color: var(--primary);
+    font-weight: 700;
+    width: 80%;
+    align-self: center;
+}
+
+.accented-text {
+    color: var(--accented);
+}
+
+.secondary-text {
+    font-size: 20px;
+    color: var(--secondary);
+}
+
+.header-middle {
+    display: flex;
+    align-items: center;
+    gap: 30px;
+    height: 100px;
+    height: 200px;
+}
+
+.box {
+    padding: 20px;
+    box-shadow: var(--accented) 0px 5px 15px;
+    display: flex;
+    flex-direction: column;
+    gap: 8px;
+}
+
+.box-title {
+    font-size: 24px;
+}
+
+.box-content {
+    font-size: 18px;
+    text-align: justify;
+    hyphens: auto;
+}
+
+.footer {
+    color: var(--secondary);
+}
