@@ -72,7 +72,6 @@ a {
 
 .links li a {
     padding: 20px 5px;
-    /* I'm using this to expand the hoverable area */
 }
 
 .show {
@@ -102,6 +101,12 @@ a:hover {
     margin-left: 30px;
 }
 
+main {
+    display: flex;
+    flex-direction: column;
+    gap: 50px;
+}
+
 .headline {
     align-self: center;
     display: flex;
@@ -109,7 +114,7 @@ a:hover {
     align-items: center;
     justify-content: center;
     gap: 20px;
-    margin-top: 60px;
+    margin-top: 70px;
 }
 
 .headline-text {
@@ -138,7 +143,9 @@ a:hover {
 }
 
 .secondary-text,
-.portfolio-description {
+.portfolio-description,
+.site-secondary-text,
+.site-features {
     font-size: 20px;
     color: var(--secondary);
 }
@@ -147,7 +154,6 @@ a:hover {
     display: flex;
     align-items: center;
     gap: 40px;
-    height: 100px;
     height: 250px;
 }
 
@@ -183,8 +189,6 @@ a:hover {
     justify-content: center;
     align-items: center;
     gap: 40px;
-    margin-left: -50px;
-    margin-right: -50px;
     padding: 20px;
 }
 
@@ -209,7 +213,8 @@ a:hover {
     
 }
 
-.portfolio-title {
+.portfolio-title,
+.site-main-text {
     font-size: 32px;
     color: var(--primary);
     font-weight: 700;
@@ -248,6 +253,57 @@ a:hover {
 .secondary-img {
     height: 200px;
     width: auto;
+}
+
+.site {
+    background-color: rgb(244, 244, 244);
+    padding: 50px 0 50px 0;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    gap: 50px;
+}
+
+.site-image > img {
+    height: 400px;
+    width: auto;    
+}
+
+.site-text {
+    height: 400px;
+    width: 400px;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    gap: 20px;
+}
+
+.site-button {
+    width: 200px;
+    background-color: var(--accented);
+    background-image: linear-gradient(1deg, var(--accented), #0f9793 99%);
+    border-radius: 100px;
+    border-width: 0;
+    box-shadow: none;
+    color: #FFFFFF;
+    cursor: pointer;
+    font-family: sans-serif;
+    font-size: 1rem;
+    padding: 6px 20px;
+    text-align: center;
+    text-decoration: none;
+    align-self: self-start;
+}
+
+.site-features > ul {
+    display: flex;
+    flex-direction: column;
+    gap: 5px;
+}
+
+.site-features > ul > li {
+    display: flex;
+    gap: 10px;
 }
 
 .footer {
