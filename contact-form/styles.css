@@ -1,0 +1,207 @@
+:root {
+    --accented: #10bbb5;
+    --primary: #222222;
+    --secondary: #7f7f7f;
+    --tertiary: #555555;
+}
+
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: Georgia;
+}
+
+li {
+    list-style-type: none;
+}
+
+a {
+    text-decoration: none;
+}
+
+.body {
+    flex: 1;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+    min-height: 100vh;
+    min-height: 100svh;
+    gap: 50px;
+}
+
+.background {
+    background-image: linear-gradient(to bottom, #10bbb583, rgba(255, 255, 255, 1));
+}
+
+.header,
+.footer {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    height: 80px;
+    color: var(--primary);
+    margin-left: 50px;
+    margin-right: 50px;
+
+}
+
+.logo {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    gap: 10px;
+}
+
+.logo-img {
+    height: 24px;
+    width: auto;
+}
+.logo-text {
+    font-size: 24px;
+    font-weight: 700;
+    margin-right: 30px;
+    letter-spacing: -0.5px;
+}
+
+.links {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    font-size: 20px;
+    gap: 40px;
+}
+
+.links li a {
+    padding: 20px 5px;
+}
+
+.show {
+    color: var(--primary);
+    transition: ease-out 0.1s;
+    transition: ease-in 0.1s;
+}
+
+.links li a:hover {
+    transition: ease-out 0.1s;
+    transition: ease-in 0.1s;
+    text-decoration: underline;
+    text-decoration-color: var(--accented);
+    text-decoration-style: solid; 
+    text-decoration-thickness: 3px;
+    text-underline-position: under;
+}
+
+.hidden {
+    color: var(--secondary);
+    transition: ease-out 0.1s;
+    transition: ease-in 0.1s;
+}
+
+.brightness {
+    font-size: 20px;
+    margin-left: 30px;
+}
+
+.footer {
+    color: var(--secondary);
+    display: flex;
+    flex-direction: column;
+    padding: 20px;
+    margin-bottom: 10px;
+}
+
+/* contact form CSS */
+
+.contact-highlight {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    margin-bottom: 10px;
+}
+
+.contact-title {
+    font-size: 32px;
+    font-weight: 700;
+    color: var(--primary);
+    letter-spacing: -2px;
+}
+
+.contact-description {
+    font-size: 20px;
+    color: var(--secondary);
+}
+
+.background-img {
+    background-color: #cccccc;
+    background-image: url("../images/joel-filipe-ZMRMFULofus-unsplash.jpg");
+    background-position: center;
+    background-repeat: no-repeat;
+    background-size: cover;
+    width: 600px;
+}
+
+.contact-section {
+    display: flex;
+    justify-content: center;
+}
+
+#survey-form {
+    display: flex;
+    flex-direction: column;
+    background-color: rgb(244, 244, 244);
+    padding: 20px;
+    gap: 15px;
+    color: var(--primary);
+}
+
+input,
+#dropdown,
+textarea {
+    padding: 5px;
+}
+
+#checkbox {
+    display: flex;
+    flex-direction: column;
+    gap: 5px;
+}
+
+.checkbox-div {
+    margin-bottom: 5px;
+
+}
+
+.checkbox-style {
+    display: flex;
+    gap: 5px;
+    color: var(--tertiary);
+}
+
+#textarea {
+    display: flex;
+    flex-direction: column;
+    gap: 10px;
+}
+
+#submit {
+    width: 200px;
+    background-color: var(--accented);
+    background-image: linear-gradient(1deg, var(--accented), #0f9793 99%);
+    border-radius: 100px;
+    border-width: 0;
+    box-shadow: none;
+    color: #FFFFFF;
+    cursor: pointer;
+    font-family: sans-serif;
+    font-size: 1rem;
+    padding: 6px 20px;
+    text-align: center;
+    text-decoration: none;
+    align-self: center;
+}
+
+#dropdown {
+    color: var(--tertiary);
+}

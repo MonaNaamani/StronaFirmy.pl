@@ -130,12 +130,11 @@ main {
 }
 
 .main-text {
-    font-size: 32px;
-    color: var(--primary);
+    font-size: 42px;
     font-weight: 700;
-    width: 80%;
+    color: var(--primary);
+    letter-spacing: -2px;
     align-self: center;
-    letter-spacing: -0.5px;
 }
 
 .accented-text {
@@ -159,7 +158,7 @@ main {
 
 .headline-card {
     padding: 20px;
-    box-shadow: var(--accented) 1.95px 1.95px 2.6px;
+    background-color: rgb(244, 244, 244);
     display: flex;
     flex-direction: column;
     gap: 8px;
@@ -171,10 +170,12 @@ main {
     transition: ease-out 0.1s;
     transition: ease-in 0.1s;
     transform: scale(1.05);
+    box-shadow: var(--accented) 1.95px 1.95px 2.6px;
 }
 
 .card-title {
     font-size: 20px;
+    font-weight: 700;
 }
 
 .card-content {

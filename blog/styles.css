@@ -133,12 +133,11 @@ main {
 }
 
 .main-text {
-    font-size: 32px;
-    color: var(--primary);
+    font-size: 42px;
     font-weight: 700;
-    width: 80%;
+    color: var(--primary);
+    letter-spacing: -2px;
     align-self: center;
-    letter-spacing: -0.5px;
 }
 
 .accented-text {
@@ -276,7 +275,7 @@ main {
 }
 
 .article-title {
-    font-size: 48px;
+    font-size: 42px;
     font-weight: 700;
     color: var(--primary);
     letter-spacing: -2px;
