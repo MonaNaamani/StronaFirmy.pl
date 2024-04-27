@@ -1,0 +1,45 @@
+---
+
+---
+
+<script>
+  const links = document.querySelectorAll('.links li')
+
+  links.forEach((link) => {
+    link.addEventListener('mouseenter', function () {
+      links.forEach((e) => {
+        let otherLink = e.querySelector('a')
+        if (otherLink !== this.querySelector('a')) {
+          otherLink.classList.remove('show')
+          otherLink.classList.add('hidden')
+        }
+      })
+    })
+
+    link.addEventListener('mouseleave', function () {
+      links.forEach((e) => {
+        let otherLink = e.querySelector('a')
+        otherLink.classList.remove('hidden')
+        otherLink.classList.add('show')
+      })
+    })
+  })
+</script>
+
+<nav id='navbar' class='background'>
+  <div class='header'>
+    <div class='logo'>
+      <img class='logo-img' src='images/logo.PNG' alt='logo' />
+      <div class='logo-text'>StronaFirmy.pl</div>
+    </div>
+    <ul class='links'>
+      <li><a class='show' href='index.html'>Strona główna</a></li>
+      <li><a class='show' href='index.html'>Portfolio</a></li>
+      <li><a class='show' href='blog/index.html'>Blog</a></li>
+      <li><a class='show' href='contact-form/index.html'>Kontakt</a></li>
+    </ul>
+    <div class='brightness'>
+      <img src='images/icons8-brightness-24.png' alt='Brightness' />
+    </div>
+  </div>
+</nav>
