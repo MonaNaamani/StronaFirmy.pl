@@ -1,5 +1,7 @@
 ---
+import { Image } from 'astro:assets'
 import BaseLayout from '../layouts/BaseLayout.astro'
+import amtImage from '../images/AMT-Website.PNG'
 ---
 
 <BaseLayout>
@@ -58,23 +60,11 @@ import BaseLayout from '../layouts/BaseLayout.astro'
         />
       </div>
       <div class='portfolio-images'>
-        <img
-          class='secondary-img'
-          src='images/AMT-Website.PNG'
-          alt='AMT Website'
-        />
-        <a href='https://amtbt.eu/pl/' target='”_blank”'>
-          <img
-            class='primary-img'
-            src='images/AMT-Website.PNG'
-            alt='AMT Website'
-          />
+        <Image class='secondary-img' src={amtImage} alt='AMT Website' />
+        <a href='https://amtbt.eu/pl/' target='_blank'>
+          <Image class='primary-img' src={amtImage} alt='AMT Website' />
         </a>
-        <img
-          class='secondary-img'
-          src='images/AMT-Website.PNG'
-          alt='AMT Website'
-        />
+        <Image class='secondary-img' src={amtImage} alt='AMT Website' />
       </div>
       <div>
         <img
