@@ -1,0 +1,2 @@
+# Docker image to use for building
+image: node:20.12.2
