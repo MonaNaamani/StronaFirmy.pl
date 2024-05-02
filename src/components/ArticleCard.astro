@@ -1,4 +1,8 @@
 ---
+import { Image } from 'astro:assets'
+import scheduleIcon from '../images/icons8-schedule-50.png'
+import authorIcon from '../images/icons8-author-32.png'
+
 const { article } = Astro.props
 ---
 
@@ -22,19 +26,11 @@ const { article } = Astro.props
   <div class='blog-text'>
     <div class='blog-details'>
       <div class='blog-date-icon'>
-        <img
-          class='blog-icon'
-          src='../images/icons8-schedule-50.png'
-          alt='Schedule icon'
-        />
+        <Image class='blog-icon' src={scheduleIcon} alt='Schedule icon' />
       </div>
       <div class='blog-date'>April 25, 2024</div>
       <div class='blog-author-icon'>
-        <img
-          class='blog-icon'
-          src='../images/icons8-author-32.png'
-          alt='Aut icon'
-        />
+        <Image class='blog-icon' src={authorIcon} alt='Author icon' />
       </div>
       <div class='blog-author'>Mona Naamani</div>
     </div>

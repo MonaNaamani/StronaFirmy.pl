@@ -1,7 +1,10 @@
 ---
-import { Image } from 'astro:assets'
 import BaseLayout from '../layouts/BaseLayout.astro'
+import { Image } from 'astro:assets'
 import amtImage from '../images/AMT-Website.png'
+import leftArrow from '../images/icons8-arrow-50.png'
+import buidlingWebsitesImage from '../images/undraw_building_websites_i78t.svg'
+import listIcon from '../images/icons8-brightness-24.png'
 ---
 
 <BaseLayout title='StronaFirmy.pl | Homepage'>
@@ -53,11 +56,7 @@ import amtImage from '../images/AMT-Website.png'
     </div>
     <div class='portfolio-container'>
       <div>
-        <img
-          class='left-arrow'
-          src='images/icons8-arrow-50.png'
-          alt='Arrow pointing left'
-        />
+        <Image class='left-arrow' src={leftArrow} alt='Arrow pointing left' />
       </div>
       <div class='portfolio-images'>
         <Image class='secondary-img' src={amtImage} alt='AMT Website' />
@@ -67,20 +66,13 @@ import amtImage from '../images/AMT-Website.png'
         <Image class='secondary-img' src={amtImage} alt='AMT Website' />
       </div>
       <div>
-        <img
-          class='right-arrow'
-          src='images/icons8-arrow-50.png'
-          alt='Arrow pointing right'
-        />
+        <Image class='right-arrow' src={leftArrow} alt='Arrow pointing right' />
       </div>
     </div>
   </div>
   <div class='site'>
     <div class='site-image'>
-      <img
-        src='images/undraw_building_websites_i78t.svg'
-        alt='Website Builder'
-      />
+      <Image src={buidlingWebsitesImage} alt='Website Builder' />
     </div>
     <div class='site-text'>
       <div class='site-main-text'>Create Personalized Websites With Us!</div>
@@ -91,27 +83,27 @@ import amtImage from '../images/AMT-Website.png'
       <div class='site-features'>
         <ul>
           <li>
-            <img src='images/icons8-brightness-24.png' alt='Bla' />
+            <Image src={listIcon} alt='Bla' />
             <p>Powyżej 5 stron</p>
           </li>
           <li>
-            <img src='images/icons8-brightness-24.png' alt='Bla' />
+            <Image src={listIcon} alt='Bla' />
             <p>Indywidualny projekt</p>
           </li>
           <li>
-            <img src='images/icons8-brightness-24.png' alt='Bla' />
+            <Image src={listIcon} alt='Bla' />
             <p>CMS (blog, galeria, itp.)</p>
           </li>
           <li>
-            <img src='images/icons8-brightness-24.png' alt='Bla' />
+            <Image src={listIcon} alt='Bla' />
             <p>Copywriting</p>
           </li>
           <li>
-            <img src='images/icons8-brightness-24.png' alt='Bla' />
+            <Image src={listIcon} alt='Bla' />
             <p>Założenie Profilu Firmy w Google</p>
           </li>
           <li>
-            <img src='images/icons8-brightness-24.png' alt='Bla' />
+            <Image src={listIcon} alt='Bla' />
             <p>Faktura VAT</p>
           </li>
         </ul>
