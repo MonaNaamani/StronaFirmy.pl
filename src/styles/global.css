@@ -1,3 +1,4 @@
+/* styles for small screen size */
 :root {
   --accented: #10bbb5;
   --primary: #222222;
@@ -204,16 +205,17 @@ main {
   justify-content: center;
   align-items: center;
   gap: 50px;
+  flex-direction: column;
 }
 
 .site-image > img {
-  height: 400px;
+  height: 200px;
   width: auto;
 }
 
 .site-text {
   height: 400px;
-  width: 400px;
+  max-width: 400px;
   display: flex;
   flex-direction: column;
   justify-content: center;
@@ -254,4 +256,30 @@ main {
   flex-direction: column;
   padding: 20px;
   margin-bottom: 10px;
+}
+
+/* styles for larger screen sizes */
+@media (min-width: 640px) {
+}
+
+@media (min-width: 768px) {
+  .site-image > img {
+    height: 300px;
+  }
+}
+
+@media (min-width: 1024px) {
+  .site {
+    flex-direction: row;
+  }
+
+  .site-image > img {
+    height: 400px;
+  }
+}
+
+@media (min-width: 1280px) {
+}
+
+@media (min-width: 1536px) {
 }
