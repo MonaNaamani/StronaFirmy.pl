@@ -147,7 +147,6 @@ main {
 }
 
 .secondary-text,
-.portfolio-description,
 .site-secondary-text,
 .site-features {
   font-size: 20px;
@@ -190,74 +189,12 @@ main {
   hyphens: auto;
 }
 
-.portfolio {
-  display: flex;
-  flex-direction: column;
-  justify-content: center;
-  align-items: center;
-  gap: 40px;
-  padding: 20px;
-}
-
-.portfolio-text {
-  display: flex;
-  flex-direction: column;
-  justify-content: center;
-  align-items: center;
-  gap: 20px;
-}
-
-.portfolio-container {
-  height: 400px;
-  display: flex;
-  justify-content: space-between;
-  align-items: center;
-  font-size: 24px;
-  background-color: #10bbb553;
-  border-radius: 20px;
-  padding: 20px;
-}
-
-.portfolio-title,
 .site-main-text {
   font-size: 32px;
   color: var(--primary);
   font-weight: 700;
   align-self: center;
   letter-spacing: -0.5px;
-}
-
-.left-arrow {
-  transform: rotateY(180deg);
-}
-
-.left-arrow:hover {
-  transition: ease-out 0.1s;
-  transition: ease-in 0.1s;
-  transform: rotateY(180deg) scale(1.3);
-}
-
-.right-arrow:hover {
-  transition: ease-out 0.1s;
-  transition: ease-in 0.1s;
-  transform: scale(1.3);
-}
-
-.portfolio-images {
-  display: flex;
-  justify-content: center;
-  align-items: center;
-  gap: 20px;
-}
-
-.primary-img {
-  height: 300px;
-  width: auto;
-}
-
-.secondary-img {
-  height: 200px;
-  width: auto;
 }
 
 .site {
