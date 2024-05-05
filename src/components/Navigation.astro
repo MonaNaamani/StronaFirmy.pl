@@ -1,47 +1,70 @@
 ---
-import logo from "../images/logo.png";
-import brightness from "../images/icons8-brightness-24.png";
-import { Image } from "astro:assets";
+import logo from '../images/logo.png'
+import brightness from '../images/icons8-brightness-24.png'
+import { Image } from 'astro:assets'
 ---
 
 <script>
-  const links = document.querySelectorAll(".links li");
+  const links = document.querySelectorAll('.links li')
 
   links.forEach((link) => {
-    link.addEventListener("mouseenter", function () {
+    link.addEventListener('mouseenter', function () {
       links.forEach((e) => {
-        let otherLink = e.querySelector("a");
-        if (otherLink !== this.querySelector("a")) {
-          otherLink.classList.remove("show");
-          otherLink.classList.add("hidden");
+        let otherLink = e.querySelector('a')
+        if (otherLink !== this.querySelector('a')) {
+          otherLink.classList.remove('show')
+          otherLink.classList.add('hidden')
         }
-      });
-    });
+      })
+    })
 
-    link.addEventListener("mouseleave", function () {
+    link.addEventListener('mouseleave', function () {
       links.forEach((e) => {
-        let otherLink = e.querySelector("a");
-        otherLink.classList.remove("hidden");
-        otherLink.classList.add("show");
-      });
-    });
-  });
+        let otherLink = e.querySelector('a')
+        otherLink.classList.remove('hidden')
+        otherLink.classList.add('show')
+      })
+    })
+  })
 </script>
 
-<nav id="navbar" class="background">
-  <div class="header">
-    <div class="logo">
-      <Image class="logo-img" src={logo} alt="logo" />
-      <div class="logo-text">StronaFirmy.pl</div>
+<nav id='navbar' class='navbar'>
+  <input type='checkbox' id='sidebar-active' />
+  <label for='sidebar-active' class='open-sidebar-button'>
+    <svg
+      xmlns='http://www.w3.org/2000/svg'
+      height='32'
+      viewBox='0 -960 960 960'
+      width='32'
+      ><path
+        d='M120-240v-80h720v80H120Zm0-200v-80h720v80H120Zm0-200v-80h720v80H120Z'
+      ></path></svg
+    >
+  </label>
+  <div class='header'>
+    <div class='logo'>
+      <Image class='logo-img' src={logo} alt='logo' />
+      <div class='logo-text'>StronaFirmy.pl</div>
     </div>
+    <label for='sidebar-active' class='close-sidebar-button'>
+      <svg
+        xmlns='http://www.w3.org/2000/svg'
+        height='32'
+        viewBox='0 -960 960 960'
+        width='32'
+        ><path
+          d='m256-200-56-56 224-224-224-224 56-56 224 224 224-224 56 56-224 224 224 224-56 56-224-224-224 224Z'
+        ></path></svg
+      >
+    </label>
     <ul class='links'>
       <li><a class='show' href='/'>Strona główna</a></li>
       <li><a class='show' href='/'>Portfolio</a></li>
       <li><a class='show' href='/blog'>Blog</a></li>
       <li><a class='show' href='/contact-form'>Kontakt</a></li>
     </ul>
-    <div class="brightness">
-      <Image src={brightness} alt="Brightness" />
+    <div class='brightness'>
+      <Image src={brightness} alt='Brightness' />
     </div>
   </div>
 </nav>
