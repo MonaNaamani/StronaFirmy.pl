@@ -351,3 +351,106 @@ main {
 
 @media (min-width: 1536px) {
 }
+
+/* styles for the contact form */
+
+.contact-section {
+  width: 50%;
+  margin-inline: auto;
+  margin-top: 20px;
+}
+
+#survey-form {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  background-color: #10bbb54e;
+  padding: 20px 40px;
+  gap: 20px;
+  border-radius: 10%;
+}
+
+.contact-highlight {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+}
+
+.contact-title {
+  font-size: 42px;
+  font-weight: 700;
+  color: var(--primary);
+  letter-spacing: -2px;
+}
+
+.contact-description {
+  font-size: 20px;
+  color: #575757;
+}
+
+.contact-content,
+#checkbox,
+#textarea {
+  display: flex;
+  flex-direction: column;
+  gap: 10px;
+}
+
+.checkbox-style {
+  display: flex;
+  gap: 10px;
+}
+
+label {
+  font-size: 18px;
+  color: var(--primary);
+  display: flex;
+  flex-wrap: wrap;
+  gap: 10px 10px;
+
+}
+
+label > select,
+label > input {
+  padding: 5px;
+  color: #575757;
+  background-color: #FFFFFF;
+  border-radius: 10px;
+  border: 1px solid rgb(27, 31, 35);
+  font-size: 14px;
+}
+
+.checkbox-style > p {
+  color: #414141;
+}
+
+#submit {
+      appearance: none;
+      background-color: var(--primary);
+      border: 1px solid rgba(27, 31, 35, .15);
+      border-radius: 6px;
+      box-shadow: rgba(27, 31, 35, .1) 0 1px 0;
+      box-sizing: border-box;
+      color: #fff;
+      cursor: pointer;
+      display: inline-block;
+      font-size: 14px;
+      font-weight: 600;
+      line-height: 20px;
+      padding: 6px 16px;
+      position: relative;
+      text-align: center;
+      text-decoration: none;
+      user-select: none;
+      -webkit-user-select: none;
+      touch-action: manipulation;
+      vertical-align: middle;
+      white-space: nowrap;
+      width: 100px;
+      align-self: center;
+  }
+  
+#submit:hover {
+      background-color: var(--accented);
+    }

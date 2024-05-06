@@ -2,81 +2,86 @@
 import BaseLayout from '../layouts/BaseLayout.astro'
 ---
 
-<BaseLayout title='StronaFirmy.pl | Homepage'>
+<BaseLayout title='StronaFirmy.pl | Contact Form'>
   <main class='contact-section'>
-    <div class='background-img'></div>
     <form id='survey-form'>
       <div class='contact-highlight'>
-        <div class='contact-title'>Contact Us!</div>
-        <div class='contact-description'>Let us know how we can help you.</div>
+        <h1 class='contact-title'>
+          Contact Us!
+        </h1>
+        <p class='contact-description'>Let us know how we can help you.</p>
       </div>
-      <label id='name-label'
-        >Enter your name:
-        <input
-          type='text'
-          id='name'
-          placeholder='Enter your name'
-          height='100'
-          required
-        />
-      </label>
-      <label id='email-label'
-        >Enter your email:
-        <input
-          type='email'
-          id='email'
-          placeholder='Enter your email'
-          required
-        />
-      </label>
-      <label id='email-label'
-        >Enter your phone number:
-        <input
-          type='tel'
-          id='phone'
-          placeholder='Enter your phone number'
-          required
-        />
-      </label>
-      <label for='dropdown'
-        >Which option best describes your current role?
-        <select id='dropdown'>
-          <option disabled selected value=''>Select current role</option>
-          <option value='1'>Student</option>
-          <option value='2'>Full Time Job</option>
-          <option value='3'>Prefer not to say</option>
-          <option value='4'>Other</option>
-        </select>
-      </label>
-      <label id='checkbox'>
-        <div class='checkbox-div'>
-          What would you like to message us about? (Check all that apply)
-        </div>
-        <div class='checkbox-style'>
-          <input type='checkbox' value='front-end' />
-          <p>Front-end Projects</p>
-        </div>
-        <div class='checkbox-style'>
-          <input type='checkbox' value='back-end' />
-          <p>Back-end Projects</p>
-        </div>
-        <div class='checkbox-style'>
-          <input type='checkbox' value='data' />
-          <p>Quotation Request</p>
-        </div>
-        <div class='checkbox-style'>
-          <input type='checkbox' value='challenges' />
-          <p>Other</p>
-        </div>
-      </label>
-      <label id='textarea'
-        >Please leave your message below:
-        <textarea
-          id='comment'
-          placeholder='Enter your message here (Optional)'
-          style='height: 101px;'></textarea>
-      </label>
-      <button id='submit'>Submit</button>
+      <div class='contact-content'>
+        <label id='name-label'
+          >Enter your name:
+          <input
+            type='text'
+            id='name'
+            placeholder='Enter your name'
+            height='100'
+            required
+          />
+        </label>
+        <label id='email-label'
+          >Enter your email:
+          <input
+            type='email'
+            id='email'
+            placeholder='Enter your email'
+            required
+          />
+        </label>
+        <label id='email-label'
+          >Enter your phone number:
+          <input
+            type='tel'
+            id='phone'
+            placeholder='Enter your phone number'
+            required
+          />
+        </label>
+        <label for='dropdown'
+          >Which option best describes your current role?
+          <select id='dropdown'>
+            <option disabled selected value=''>Select current role</option>
+            <option value='1'>Student</option>
+            <option value='2'>Full Time Job</option>
+            <option value='3'>Prefer not to say</option>
+            <option value='4'>Other</option>
+          </select>
+        </label>
+        <label id='checkbox'>
+          <div class='checkbox-div'>
+            What would you like to message us about? (Check all that apply)
+          </div>
+          <div class='checkbox-style'>
+            <input type='checkbox' value='front-end' />
+            <p>Front-end Projects</p>
+          </div>
+          <div class='checkbox-style'>
+            <input type='checkbox' value='back-end' />
+            <p>Back-end Projects</p>
+          </div>
+          <div class='checkbox-style'>
+            <input type='checkbox' value='data' />
+            <p>Quotation Request</p>
+          </div>
+          <div class='checkbox-style'>
+            <input type='checkbox' value='challenges' />
+            <p>Other</p>
+          </div>
+        </label>
+        <label id='textarea'
+          >Please leave your message below:
+          <textarea
+            id='comment'
+            placeholder='Enter your message here (Optional)'
+            style='height: 101px;'
+          >
+          </textarea>
+        </label>
+        <button id='submit'> Submit </button>
+      </div>
     </form>
   </main>
 </BaseLayout>
