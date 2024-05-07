@@ -200,6 +200,13 @@ main {
   text-align: right;
 }
 
+.disclaimer {
+  margin-bottom: 10px;
+  font-size: 12px;
+  max-width: 600px;
+  text-align: center;
+}
+
 .secondary-text,
 .site-secondary-text,
 .site-features {
