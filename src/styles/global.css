@@ -1,15 +1,22 @@
 /* styles for small screen size */
 :root {
-  --accented: #10bbb5;
-  --primary: #222222;
-  --secondary: #7f7f7f;
+  --accentedColor: #10BBB5;
+  --primaryText: #313131;
+  --secondaryText: #919191;
+  --headerText: #616161;
+  --disableText: #C2C2C2;
+
+  --separator: #E4E4E4;
+  --inactiveElement: #ECECEC;
+  --whiteBackground: #F5F5F7;
 }
 
 * {
   margin: 0;
   padding: 0;
   box-sizing: border-box;
-  font-family: Georgia;
+  font-family: Georgia, Helvetica, sans-serif;
+  color: var(--primaryText);
 }
 
 li {
