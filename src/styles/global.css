@@ -19,10 +19,6 @@
   color: var(--primaryText);
 }
 
-li {
-  list-style-type: none;
-}
-
 a {
   text-decoration: none;
 }
@@ -102,6 +98,10 @@ a {
   font-size: 20px;
   gap: 40px;
   flex-direction: column;
+}
+
+.links li {
+  list-style-type: none;
 }
 
 .links li a {
