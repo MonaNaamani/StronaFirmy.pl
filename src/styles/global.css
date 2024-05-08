@@ -33,7 +33,6 @@ a {
   flex-direction: column;
   justify-content: space-between;
   min-height: 100vh;
-  gap: 50px;
 }
 
 .navbar {
@@ -291,11 +290,6 @@ main {
   padding: 0 20px;
 }
 
-.site-button {
-  width: 200px;
-  align-self: self-start;
-}
-
 .button-style {
   background-color: var(--accentedColor);
   background-image: linear-gradient(1deg, var(--accentedColor), #0f9793 99%);
@@ -312,7 +306,7 @@ main {
 }
 
 .button-style:hover {
-  
+
 }
 
 .site-features > ul {
@@ -330,6 +324,14 @@ main {
   display: flex;
   flex-direction: column;
   align-items: center;
+  gap: 20px;
+}
+
+.section-content {
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: center;
+  gap: 20px;
 }
 
 .section-header {
@@ -338,7 +340,6 @@ main {
   font-weight: 700;
   letter-spacing: -0.5px;
   margin-bottom: 40px;
-  margin-top: 60px;
 }
 
 .footer {
@@ -346,7 +347,8 @@ main {
   display: flex;
   flex-direction: column;
   padding: 20px;
-  margin-bottom: 10px;
+  margin-bottom: 50px;
+  margin-top: 100px;
 }
 
 /* styles for larger screen sizes */
@@ -393,6 +395,10 @@ main {
   .open-sidebar-button,
   .close-sidebar-button {
     display: none;
+  }
+
+  .secondary-text {
+    padding: 0 100px;
   }
 }
 
