@@ -43,7 +43,7 @@ a {
   );
   height: 12svh;
   position: fixed;
-  width: 100%;
+  width: 100vw;
   backdrop-filter: blur(50px) saturate(70%);
 }
 
@@ -182,7 +182,7 @@ main {
   display: flex;
   flex-direction: column;
   gap: 20px;
-  width: 60%;
+  width: 80%;
 }
 
 .secondary-text {
@@ -328,6 +328,7 @@ main {
   flex-direction: column;
   align-items: center;
   gap: 20px;
+  padding: 0 20px;
 }
 
 .section-content {
@@ -354,73 +355,9 @@ main {
   margin-top: 100px;
 }
 
-/* styles for larger screen sizes */
-@media (min-width: 640px) {
-  .site {
-    flex-direction: row;
-  }
-}
-
-@media (min-width: 768px) {
-  .site-image > img {
-    height: 300px;
-  }
-
-  .navbar {
-    display: flex;
-    justify-content: space-between;
-  }
-
-  .header {
-    height: 80px;
-    flex-direction: row;
-    align-items: center;
-    margin-right: 50px;
-
-    position: static;
-    top: auto;
-    right: auto;
-    z-index: auto;
-
-    box-shadow: none;
-    transition: none;
-    background-color: transparent;
-  }
-
-  .links {
-    flex-direction: row;
-  }
-
-  .links li a:hover {
-    text-decoration-color: var(--accentedColor);
-  }
-
-  .open-sidebar-button,
-  .close-sidebar-button {
-    display: none;
-  }
-
-  .secondary-text {
-    padding: 0 100px;
-  }
-}
-
-@media (min-width: 1024px) {
-  .site-image > img {
-    height: 400px;
-  }
-}
-
-@media (min-width: 1280px) {
-}
-
-@media (min-width: 1536px) {
-}
-
 /* styles for the contact form */
 
 .contact-section {
-  width: 50%;
   margin-inline: auto;
   margin-top: 20px;
 }
@@ -522,4 +459,67 @@ label > input {
 #submit:hover {
   background-color: var(--accentedColor);
   color: #bb1016;
+}
+
+/* styles for larger screen sizes */
+@media (min-width: 640px) {
+  .site {
+    flex-direction: row;
+  }
+}
+
+@media (min-width: 768px) {
+  .site-image > img {
+    height: 300px;
+  }
+
+  .navbar {
+    display: flex;
+    justify-content: space-between;
+  }
+
+  .header {
+    height: 80px;
+    flex-direction: row;
+    align-items: center;
+    margin-right: 50px;
+
+    position: static;
+    top: auto;
+    right: auto;
+    z-index: auto;
+
+    box-shadow: none;
+    transition: none;
+    background-color: transparent;
+  }
+
+  .links {
+    flex-direction: row;
+  }
+
+  .links li a:hover {
+    text-decoration-color: var(--accentedColor);
+  }
+
+  .open-sidebar-button,
+  .close-sidebar-button {
+    display: none;
+  }
+
+  .headline-text {
+    width: 60%;
+  }
+}
+
+@media (min-width: 1024px) {
+  .site-image > img {
+    height: 400px;
+  }
+}
+
+@media (min-width: 1280px) {
+}
+
+@media (min-width: 1536px) {
 }
