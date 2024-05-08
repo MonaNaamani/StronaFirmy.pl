@@ -26,6 +26,15 @@ import { Icon } from 'astro-icon/components'
       })
     })
   })
+
+  // Add shadow to the nav bar when scrolling down
+  function changeCss() {
+    var navElement = document.querySelector('nav')
+    this.scrollY > 100
+      ? (navElement.style.boxShadow = '-5px 0 5px rgba(0, 0, 0, 0.25)')
+      : (navElement.style.boxShadow = 'none')
+  }
+  window.addEventListener('scroll', changeCss, false)
 </script>
 
 <!-- https://www.youtube.com/watch?v=8eFeIFKAKHw -->
