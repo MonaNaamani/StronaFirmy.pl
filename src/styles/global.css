@@ -242,13 +242,6 @@ main {
   min-height: 220px;
 }
 
-.headline-card:hover {
-  transition: ease-out 0.1s;
-  transition: ease-in 0.1s;
-  transform: scale(1.05);
-  box-shadow: var(--accentedColor) 1.95px 1.95px 2.6px;
-}
-
 .card-title {
   font-size: 20px;
   font-weight: 700;
@@ -509,6 +502,13 @@ label > input {
 
   .headline-text {
     width: 60%;
+  }
+
+  .headline-card:hover {
+    transition: ease-out 0.1s;
+    transition: ease-in 0.1s;
+    transform: scale(1.05);
+    box-shadow: var(--accentedColor) 1.95px 1.95px 2.6px;
   }
 }
 
