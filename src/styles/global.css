@@ -246,7 +246,7 @@ main {
   transition: ease-out 0.1s;
   transition: ease-in 0.1s;
   transform: scale(1.05);
-  box-shadow: var(--accented) 1.95px 1.95px 2.6px;
+  box-shadow: var(--accentedColor) 1.95px 1.95px 2.6px;
 }
 
 .card-title {
@@ -262,7 +262,7 @@ main {
 
 .site-main-text {
   font-size: 32px;
-  color: var(--primary);
+  color: var(--primaryText);
   font-weight: 700;
   align-self: center;
   letter-spacing: -0.5px;
@@ -339,14 +339,14 @@ main {
 
 .section-header {
   font-size: 32px;
-  color: var(--primary);
+  color: var(--primaryText);
   font-weight: 700;
   letter-spacing: -0.5px;
   margin-bottom: 40px;
 }
 
 .footer {
-  color: var(--secondary);
+  color: var(--secondaryText);
   display: flex;
   flex-direction: column;
   padding: 20px;
@@ -445,7 +445,7 @@ main {
 .contact-title {
   font-size: 42px;
   font-weight: 700;
-  color: var(--primary);
+  color: var(--primaryText);
   letter-spacing: -2px;
 }
 
@@ -473,7 +473,7 @@ main {
 
 label {
   font-size: 18px;
-  color: var(--primary);
+  color: var(--primaryText);
   display: flex;
   flex-wrap: wrap;
   gap: 10px 10px;
@@ -495,7 +495,7 @@ label > input {
 
 #submit {
   appearance: none;
-  background-color: var(--primary);
+  background-color: var(--primaryText);
   border: 1px solid rgba(27, 31, 35, 0.15);
   border-radius: 6px;
   box-shadow: rgba(27, 31, 35, 0.1) 0 1px 0;
@@ -520,6 +520,6 @@ label > input {
 }
 
 #submit:hover {
-  background-color: var(--accented);
+  background-color: var(--accentedColor);
   color: #bb1016;
 }
