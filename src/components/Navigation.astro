@@ -31,6 +31,10 @@ import { Icon } from 'astro-icon/components'
 
 <!-- https://www.youtube.com/watch?v=8eFeIFKAKHw -->
 <nav id='navbar' class='navbar'>
+  <div class='logo'>
+    <Image class='logo-img' src={logo} alt='logo' />
+    <div class='logo-text'>StronaFirmy.pl</div>
+  </div>
   <input type='checkbox' id='sidebar-active' />
   <label for='sidebar-active' class='open-sidebar-button'>
     <!-- Embed the contents of the `/src/icons/bars-solid.svg` file -->
@@ -38,10 +42,6 @@ import { Icon } from 'astro-icon/components'
   </label>
   <label id='overlay' for='sidebar-active'></label>
   <div class='header'>
-    <div class='logo'>
-      <Image class='logo-img' src={logo} alt='logo' />
-      <div class='logo-text'>StronaFirmy.pl</div>
-    </div>
     <label for='sidebar-active' class='close-sidebar-button'>
       <Icon name='times-solid' size={32} />
     </label>
@@ -51,8 +51,5 @@ import { Icon } from 'astro-icon/components'
       <li><a class='show' href='/blog'>Blog</a></li>
       <li><a class='show' href='/contact-form'>Kontakt</a></li>
     </ul>
-    <div class='brightness'>
-      <Image src={brightness} alt='Brightness' />
-    </div>
   </div>
 </nav>
