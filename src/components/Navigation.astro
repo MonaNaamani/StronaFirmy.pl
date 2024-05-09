@@ -39,10 +39,10 @@ import { Icon } from 'astro-icon/components'
 
 <!-- https://www.youtube.com/watch?v=8eFeIFKAKHw -->
 <nav id='navbar' class='navbar'>
-  <div class='logo'>
+  <a href='/' class='logo'>
     <Image class='logo-img' src={logo} alt='logo' />
     <div class='logo-text'>StronaFirmy.pl</div>
-  </div>
+  </a>
   <input type='checkbox' id='sidebar-active' />
   <label for='sidebar-active' class='open-sidebar-button'>
     <!-- Embed the contents of the `/src/icons/bars-solid.svg` file -->
@@ -55,7 +55,7 @@ import { Icon } from 'astro-icon/components'
     </label>
     <ul class='links'>
       <li><a class='show' href='/'>Strona główna</a></li>
-      <li><a class='show' href='/'>Portfolio</a></li>
+      <li><a class='show' href='/#portfolio'>Portfolio</a></li>
       <li><a class='show' href='/blog'>Blog</a></li>
       <li><a class='show' href='/kontakt'>Kontakt</a></li>
     </ul>

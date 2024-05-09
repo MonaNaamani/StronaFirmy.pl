@@ -17,10 +17,15 @@
   box-sizing: border-box;
   font-family: Georgia, Helvetica, sans-serif;
   color: var(--primaryText);
+  scroll-behavior: smooth;
 }
 
 a {
   text-decoration: none;
+}
+
+h1, h2, h3, h4, h5, h6 {
+  scroll-margin-top: 14svh;
 }
 
 .body {
