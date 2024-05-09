@@ -2,7 +2,7 @@
 :root {
   --accentedColor: #10bbb5;
   --primaryText: #313131;
-  --secondaryText: #919191;
+  --secondaryText: #535353;
   --headerText: #616161;
   --disableText: #c2c2c2;
 
@@ -51,14 +51,6 @@ h1, h2, h3, h4, h5, h6 {
   position: fixed;
   width: 100vw;
   background-color: rgba(255, 255, 255, 0.9);
-}
-
-/* if backdrop support: very transparent and blurred */
-@supports (-webkit-backdrop-filter: blur(2em)) {
-  .navbar {
-    background-color: rgba(255, 255, 255, 0.5);
-    -webkit-backdrop-filter: blur(2em);
-  }
 }
 
 .header {
