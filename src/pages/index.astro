@@ -1,6 +1,7 @@
 ---
 import BaseLayout from '../layouts/BaseLayout.astro'
 import { Image } from 'astro:assets'
+import { Icon } from 'astro-icon/components'
 import buidlingWebsitesImage from '../images/undraw_building_websites_i78t.svg'
 import listIcon from '../images/icons8-brightness-24.png'
 import reviewImage from '../images/review.png'
@@ -60,29 +61,30 @@ import reviewImage from '../images/review.png'
       <div class='site-features'>
         <ul>
           <li>
-            <Image src={listIcon} alt='' />
+            <Icon name='icons8-tick' size={32} class='site-feature-icon' />
             <p>
               Nasze strony są kodowane ręcznie, dzięki czemu są szybkie,
-              responsywne i przyjazne wyszukiwarkom internetowym
+              responsywne i zoptymalizowane pod kątem wyszukiwarek.
             </p>
           </li>
           <li>
-            <Image src={listIcon} alt='' />
-            <p>Bezpieczny hosting i certyfikat SSL wliczone w cenę</p>
-          </li>
-          <li>
-            <Image src={listIcon} alt='' />
+            <Icon name='icons8-tick' size={32} class='site-feature-icon' />
             <p>
               Dbamy o to, aby tworzone przez nas strony były dostosowane do
-              potrzeb osób niepełnosprawnych
+              potrzeb osób niepełnosprawnych i zgodne z wytycznymi dla
+              dostępności treści internetowych (WCAG 2.1).
             </p>
           </li>
           <li>
-            <Image src={listIcon} alt='' />
+            <Icon name='icons8-tick' size={32} class='site-feature-icon' />
             <p>
-              Nie umieszczamy na naszych stronach ciasteczek, które naruszają
-              prywatność Twoich klientów
+              Przykładamy dużą uwagę do ochrony prywatności Twoich klientów oraz
+              do tego aby Twoja stona była zgodna z RODO (GDPR).
             </p>
+          </li>
+          <li>
+            <Icon name='icons8-tick' size={32} class='site-feature-icon' />
+            <p>Bezpieczny hosting i certyfikat SSL wliczone w cenę.</p>
           </li>
         </ul>
       </div>

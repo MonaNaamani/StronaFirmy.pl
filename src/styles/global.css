@@ -269,27 +269,43 @@ main {
 
 .site {
   background-color: rgb(244, 244, 244);
-  padding: 50px 0 50px 0;
+  padding: 50px;
   display: flex;
   justify-content: center;
   align-items: center;
   gap: 50px;
   flex-direction: column;
+  margin: auto;
 }
 
 .site-image > img {
-  height: 200px;
-  width: auto;
+  width: 40vw;
+  height: auto;
 }
 
 .site-text {
-  height: 400px;
-  max-width: 400px;
   display: flex;
   flex-direction: column;
   justify-content: center;
   gap: 20px;
   padding: 0 20px;
+  text-align: justify;
+  hyphens: auto;
+}
+
+.site-features > ul {
+  display: flex;
+  flex-direction: column;
+  gap: 20px;
+}
+
+.site-features > ul > li {
+  display: flex;
+  gap: 10px;
+}
+
+.site-feature-icon {
+  min-width: 32px;
 }
 
 .button-style {
@@ -308,17 +324,6 @@ main {
 }
 
 .button-style:hover {
-}
-
-.site-features > ul {
-  display: flex;
-  flex-direction: column;
-  gap: 5px;
-}
-
-.site-features > ul > li {
-  display: flex;
-  gap: 10px;
 }
 
 .section {
@@ -461,14 +466,15 @@ label > input {
 
 /* styles for larger screen sizes */
 @media (min-width: 640px) {
-  .site {
-    flex-direction: row;
-  }
 }
 
 @media (min-width: 768px) {
-  .site-image > img {
-    height: 300px;
+}
+
+@media (min-width: 1024px) {
+  .site {
+    flex-direction: row;
+    padding: 50px 100px;
   }
 
   .navbar {
@@ -518,14 +524,9 @@ label > input {
   }
 }
 
-@media (min-width: 1024px) {
-  .site-image > img {
-    height: 400px;
-  }
-}
-
 @media (min-width: 1280px) {
 }
 
 @media (min-width: 1536px) {
+
 }
