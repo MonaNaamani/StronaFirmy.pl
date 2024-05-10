@@ -3,8 +3,9 @@ import BaseLayout from '../layouts/BaseLayout.astro'
 import { Image } from 'astro:assets'
 import { Icon } from 'astro-icon/components'
 import buidlingWebsitesImage from '../images/undraw_building_websites_i78t.svg'
-import listIcon from '../images/icons8-brightness-24.png'
 import reviewImage from '../images/review.png'
+import Step from '../components/Step.astro'
+import Steps from '../components/Steps.astro'
 ---
 
 <BaseLayout title='StronaFirmy.pl | Homepage'>
@@ -97,21 +98,12 @@ import reviewImage from '../images/review.png'
       bardzo prosty proces. W przeciwieństwie do typowego projektanta nie
       pozostawimy Cię samego lub samej z gotową stroną po zakończeniu projektu.
       Na każdym etapie wszystkim albo zajmiemy się sami, albo doradzimy, tak
-      abyś mógł lub mogła skupić się na rozwijaniu swojego biznesu.
-    </p>
-    <p class='secondary-text'>
-      Nasz proces składa się z 4 prostych kroków:
-      <ol>
-        <li>Zbieramy od Ciebie wszystkie potrzebne informacje</li>
-        <li>Budujemy stronę dopasowaną do Twoich potrzeb</li>
-        <li>Zatwierdzasz projekt</li>
-        <li>
-          Opiekujemy się Twoją stroną tak długo, jak długo z nami pozostajesz
-          (mamy nadzieję, że na zawsze!)
-        </li>
-      </ol>
+      abyś mógł lub mogła skupić się na rozwijaniu swojego biznesu. Nasz proces
+      składa się z 4 prostych kroków:
     </p>
   </section>
+  <Steps />
+
   <section class='section'>
     <h2 class='section-header'>Co jeszcze możemy dla Ciebie zrobić?</h2>
     <p class='secondary-text'>
