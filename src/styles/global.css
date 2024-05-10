@@ -359,7 +359,6 @@ main {
 }
 
 /* styles for the contact form */
-
 .contact-section {
   margin-inline: auto;
   margin-top: 20px;
@@ -462,6 +461,13 @@ label > input {
 #submit:hover {
   background-color: var(--accentedColor);
   color: #bb1016;
+}
+
+.flex-container {
+  display: flex;
+  flex-wrap: wrap;
+  gap: 0px 20px;
+  justify-content: center;
 }
 
 /* styles for larger screen sizes */
