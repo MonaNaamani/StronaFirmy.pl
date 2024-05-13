@@ -18,6 +18,7 @@
   font-family: Georgia, Helvetica, sans-serif;
   color: var(--primaryText);
   scroll-behavior: smooth;
+  font-size: 16px;
 }
 
 a {
@@ -252,12 +253,11 @@ main {
 }
 
 .card-title {
-  font-size: 20px;
+  font-size: 18px;
   font-weight: 700;
 }
 
 .card-content {
-  font-size: 18px;
   text-align: justify;
   hyphens: auto;
 }
@@ -305,10 +305,6 @@ main {
 .site-features > ul > li {
   display: flex;
   gap: 10px;
-}
-
-.site-feature-icon {
-  min-width: 32px;
 }
 
 .button-style {

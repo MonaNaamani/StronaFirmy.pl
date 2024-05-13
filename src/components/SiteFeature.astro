@@ -1,0 +1,21 @@
+---
+import { Icon } from 'astro-icon/components'
+
+const { text } = Astro.props
+---
+
+<li>
+  <Icon name='icons8-tick' size={32} class='icon' />
+  {text}
+</li>
+
+<style>
+  li {
+    display: flex;
+    align-items: center;
+  }
+
+  .icon {
+    min-width: 32px;
+  }
+</style>

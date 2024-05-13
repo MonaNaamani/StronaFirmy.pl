@@ -11,6 +11,7 @@ import privacyPolicyImage from '../images/icons8-privacy-policy-48.png'
 import functionImage from '../images/icons8-function-48.png'
 import Steps from '../components/Steps.astro'
 import Service from '../components/Service.astro'
+import SiteFeature from '../components/SiteFeature.astro'
 ---
 
 <BaseLayout title='StronaFirmy.pl | Homepage'>
@@ -66,32 +67,22 @@ import Service from '../components/Service.astro'
       <div class='site-secondary-text'></div>
       <div class='site-features'>
         <ul>
-          <li>
-            <Icon name='icons8-tick' size={32} class='site-feature-icon' />
-            <p>
-              Nasze strony są kodowane ręcznie, dzięki czemu są szybkie,
-              responsywne i zoptymalizowane pod kątem wyszukiwarek.
-            </p>
-          </li>
-          <li>
-            <Icon name='icons8-tick' size={32} class='site-feature-icon' />
-            <p>
-              Dbamy o to, aby tworzone przez nas strony były dostosowane do
+          <SiteFeature
+            text={`Nasze strony są kodowane ręcznie, dzięki czemu są szybkie,
+            responsywne i zoptymalizowane pod kątem wyszukiwarek.`}
+          />
+          <SiteFeature
+            text={`Dbamy o to, aby tworzone przez nas strony były dostosowane do
               potrzeb osób niepełnosprawnych i zgodne z wytycznymi dla
-              dostępności treści internetowych (WCAG 2.1).
-            </p>
-          </li>
-          <li>
-            <Icon name='icons8-tick' size={32} class='site-feature-icon' />
-            <p>
-              Przykładamy dużą uwagę do ochrony prywatności Twoich klientów oraz
-              do tego aby Twoja stona była zgodna z RODO (GDPR).
-            </p>
-          </li>
-          <li>
-            <Icon name='icons8-tick' size={32} class='site-feature-icon' />
-            <p>Bezpieczny hosting i certyfikat SSL wliczone w cenę.</p>
-          </li>
+              dostępności treści internetowych (WCAG 2.1).`}
+          />
+          <SiteFeature
+            text={`Przykładamy dużą uwagę do ochrony prywatności Twoich klientów oraz
+              do tego aby Twoja stona była zgodna z RODO (GDPR).`}
+          />
+          <SiteFeature
+            text={`Bezpieczny hosting i certyfikat SSL wliczone w cenę.`}
+          />
         </ul>
       </div>
     </div>
