@@ -469,7 +469,7 @@ label > input {
 .flex-container {
   display: flex;
   flex-wrap: wrap;
-  gap: 0px 20px;
+  gap: 20px;
   justify-content: center;
 }
 
