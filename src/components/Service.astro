@@ -32,16 +32,18 @@ const { imgSrc, imgAlt, text, href } = Astro.props
     border-radius: 20px;
   }
 
-  li:hover {
-    transition: ease-out 0.1s;
-    transition: ease-in 0.1s;
-    transform: scale(1.05);
-    box-shadow: var(--accentedColor) 1.95px 1.95px 2.6px;
-  }
-
   .learn-more {
     font-weight: 700;
     text-align: center;
     padding: 20px;
+  }
+
+  @media (min-width: 1024px) {
+    li:hover {
+      transition: ease-out 0.1s;
+      transition: ease-in 0.1s;
+      transform: scale(1.05);
+      box-shadow: var(--accentedColor) 1.95px 1.95px 2.6px;
+    }
   }
 </style>
