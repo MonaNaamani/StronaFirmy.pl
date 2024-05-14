@@ -21,20 +21,83 @@
   font-size: 16px;
 }
 
-a {
-  text-decoration: none;
-}
-
-h1, h2, h3, h4, h5, h6 {
-  scroll-margin-top: max(14svh, 80px);
-}
-
-.body {
+body {
   flex: 1;
   display: flex;
   flex-direction: column;
   justify-content: space-between;
   min-height: 100vh;
+}
+
+main {
+  display: flex;
+  flex-direction: column;
+  gap: 50px;
+  margin-top: 150px;
+  justify-content: center;
+}
+
+a {
+  text-decoration: none;
+}
+
+h1,
+h2,
+h3,
+h4,
+h5,
+h6 {
+  scroll-margin-top: max(14svh, 80px);
+  font-weight: 700;
+}
+
+h1 {
+  font-size: 36px;
+  letter-spacing: -2px;
+  text-align: center;
+}
+
+h2 {
+  font-size: 30px;
+}
+
+h3 {
+  font-size: 24px;
+}
+
+h4 {
+  font-size: 20px;
+}
+
+h5 {
+  font-size: 18px;
+}
+
+h6 {
+  font-size: 16px;
+}
+
+article {
+  margin: 100px 15px;
+  max-width: 670px;
+  align-self: center;
+
+  @media screen and (min-width: 600px){
+    padding: 0 30px;
+  }
+}
+
+p {
+  font-size: 16px;
+  line-height: 26px;
+  word-wrap: break-word;
+  overflow-wrap: break-word;
+  hyphens: auto;
+
+  @media screen and (min-width: 600px){
+    font-size: 18px;
+    line-height: 30px;
+  }
 }
 
 .navbar {
@@ -170,13 +233,6 @@ h1, h2, h3, h4, h5, h6 {
   z-index: 9;
 }
 
-main {
-  display: flex;
-  flex-direction: column;
-  gap: 50px;
-  margin-top: 150px;
-}
-
 .headline {
   align-self: center;
   display: flex;
@@ -234,7 +290,7 @@ main {
 }
 
 .headline-content {
-  margin: 100px 0;
+  margin: 50px 0;
   display: flex;
   align-items: center;
   gap: 40px;
@@ -250,7 +306,7 @@ main {
   gap: 8px;
   width: 300px;
   border-radius: 20px;
-  min-height: 220px;
+  height: 250px;
 }
 
 .card-title {
@@ -261,6 +317,7 @@ main {
 .card-content {
   text-align: justify;
   hyphens: auto;
+  line-height: 24px;
 }
 
 .site-main-text {
@@ -470,7 +527,6 @@ label > input {
   justify-content: center;
 }
 
-
 .step {
   display: flex;
   flex-direction: column;
@@ -543,5 +599,4 @@ label > input {
 }
 
 @media (min-width: 1536px) {
-
 }

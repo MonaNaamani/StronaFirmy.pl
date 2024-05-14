@@ -4,6 +4,8 @@ const { frontmatter } = Astro.props
 ---
 
 <BaseLayout title={frontmatter.title}>
-  <slot />
-  <!-- Markdown content is injected here -->
+  <article>
+    <slot />
+    <!-- Markdown content is injected here -->
+  </article>
 </BaseLayout>
