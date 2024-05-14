@@ -132,6 +132,7 @@ h1, h2, h3, h4, h5, h6 {
   text-decoration-style: solid;
   text-decoration-thickness: 3px;
   text-underline-position: under;
+  text-underline-offset: 1px;
 }
 
 .hidden {
