@@ -1,4 +1,10 @@
+---
+layout: ../layouts/LandingPageLayout.astro
+title: Find out how We Can Help You Adapt Your Site or App to the Regulations
+description: Find out what makes Astro awesome!
+---
 # Find out how We Can Help You Adapt Your Site or App to the Regulations
+
 
 Websites and apps must always comply with certain requirements imposed by law. Failure to comply with the legal requirements, can result in serious penalties including substantial fines, audits and potential litigation.
 
