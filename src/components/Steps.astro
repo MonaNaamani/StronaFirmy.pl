@@ -24,12 +24,11 @@
     background: linear-gradient(var(--default-b) 0 0) no-repeat 50%
       calc((var(--circle) - var(--b)) / 2) / 100% var(--b);
     counter-reset: step;
-    margin: 20px;
     padding: 0;
     counter-reset: step;
     overflow: hidden;
     font-size: 20px;
-    margin: -50px 100px 100px 100px;
+    margin: 0px 120px 100px 120px;
   }
   ol.stepper li {
     display: grid;
@@ -38,6 +37,7 @@
     position: relative;
     flex: 1 1 0px;
     text-align: center;
+    line-height: 24px;
   }
   ol.stepper li::before {
     content: counter(step) ' ';
@@ -79,7 +79,6 @@
     ol.stepper li {
       display: flex;
       text-align: left;
-      margin-left: 5px;
     }
     ol.stepper li.active::after {
       content: '';
