@@ -1,0 +1,44 @@
+---
+import Service from './Service.astro'
+
+import domainImage from '../images/icons8-domain-48.png'
+import myBusinessImage from '../images/icons8-my-business-48.png'
+import googleImage from '../images/icons8-google-48.png'
+import privacyPolicyImage from '../images/icons8-privacy-policy-48.png'
+import functionImage from '../images/icons8-function-48.png'
+---
+
+<section class='section'>
+  <h2 class='section-header'>Co jeszcze możemy dla Ciebie zrobić?</h2>
+  <ul class='flex-container'>
+    <Service
+      imgSrc={domainImage}
+      imgAlt='Ikona domeny internetowej'
+      text='Nie masz własnej domeny internetowej? Zajmiemy się jej rejestracją!'
+    />
+    <Service
+      imgSrc={myBusinessImage}
+      imgAlt='Ikona Google Moja Firma'
+      text='Założenie profilu Google Moja Firma'
+    />
+    <Service
+      imgSrc={privacyPolicyImage}
+      imgAlt='Ikona polityki prywatności'
+      text={`Przygotowanie i wymagane prawnie aktualizacje Polityki Prywatności i
+          Polityki Plików Cookie`}
+      href='/iubenda-partner'
+    />
+    <Service
+      imgSrc={googleImage}
+      imgAlt='Logo Google'
+      text={`Zgłoszenie i monitorowanie pozycji witryny w wynikach wyszukiwania
+        Google`}
+    />
+    <Service
+      imgSrc={functionImage}
+      imgAlt='Ikona kół zębatych'
+      ]
+      text='Integracja dodatkowej funcjonalności, np. czatu na żywo'
+    />
+  </ul>
+</section>

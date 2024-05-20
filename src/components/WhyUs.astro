@@ -1,0 +1,35 @@
+---
+import { Image } from 'astro:assets'
+import buidlingWebsitesImage from '../images/undraw_building_websites_i78t.svg'
+import SiteFeature from './SiteFeature.astro'
+---
+
+<section class='site'>
+  <div class='site-image'>
+    <Image src={buidlingWebsitesImage} alt='Website Builder' />
+  </div>
+  <div class='site-text'>
+    <h2 class='site-main-text'>Dlaczego my?</h2>
+    <div class='site-secondary-text'></div>
+    <div class='site-features'>
+      <ul>
+        <SiteFeature
+          text={`Nasze strony są kodowane ręcznie, dzięki czemu są szybkie,
+            responsywne i zoptymalizowane pod kątem wyszukiwarek.`}
+        />
+        <SiteFeature
+          text={`Dbamy o to, aby tworzone przez nas strony były dostosowane do
+              potrzeb osób niepełnosprawnych i zgodne z wytycznymi dla
+              dostępności treści internetowych (WCAG 2.1).`}
+        />
+        <SiteFeature
+          text={`Przykładamy dużą uwagę do ochrony prywatności Twoich klientów oraz
+              do tego aby Twoja stona była zgodna z RODO (GDPR).`}
+        />
+        <SiteFeature
+          text={`Bezpieczny hosting i certyfikat SSL wliczone w cenę.`}
+        />
+      </ul>
+    </div>
+  </div>
+</section>
