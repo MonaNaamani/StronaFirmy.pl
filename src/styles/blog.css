@@ -26,8 +26,8 @@ main {
 
 .blog-section {
   display: flex;
-  width: 1000px;
   justify-content: space-between;
+  flex-direction: column;
 }
 
 .blog-img {
@@ -168,4 +168,11 @@ main {
   line-height: 1.8;
   text-align: justify;
   hyphens: auto;
+}
+
+@media screen and (min-width: 1024px) {
+  .blog-section {
+    flex-direction: row;
+    width: 1000px;
+  }
 }
