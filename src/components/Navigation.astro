@@ -38,29 +38,31 @@ import { Icon } from 'astro-icon/components'
 </script>
 
 <!-- https://www.youtube.com/watch?v=8eFeIFKAKHw -->
-<nav id='navbar'>
-  <a href='/' class='logo'>
-    <Image class='logo-img' src={logo} alt='logo' loading='eager' />
-    <div class='logo-text'>StronaFirmy.pl</div>
-  </a>
-  <input type='checkbox' id='sidebar-active' />
-  <label for='sidebar-active' class='open-sidebar-button'>
-    <!-- Embed the contents of the `/src/icons/bars-solid.svg` file -->
-    <Icon name='bars-solid' size={32} />
-  </label>
-  <label id='overlay' for='sidebar-active'></label>
-  <div class='header'>
-    <label for='sidebar-active' class='close-sidebar-button'>
-      <Icon name='times-solid' size={32} />
+<header>
+  <nav>
+    <a href='/' class='logo'>
+      <Image class='logo-img' src={logo} alt='logo' loading='eager' />
+      <div class='logo-text'>StronaFirmy.pl</div>
+    </a>
+    <input type='checkbox' id='sidebar-active' />
+    <label for='sidebar-active' class='open-sidebar-button'>
+      <!-- Embed the contents of the `/src/icons/bars-solid.svg` file -->
+      <Icon name='bars-solid' size={32} />
     </label>
-    <ul class='links'>
-      <li><a class='show' href='/'>Strona główna</a></li>
-      <li><a class='show' href='/#portfolio'>Portfolio</a></li>
-      <li><a class='show' href='/blog'>Blog</a></li>
-      <li><a class='show' href='/kontakt'>Kontakt</a></li>
-    </ul>
-  </div>
-</nav>
+    <label id='overlay' for='sidebar-active'></label>
+    <div class='header'>
+      <label for='sidebar-active' class='close-sidebar-button'>
+        <Icon name='times-solid' size={32} />
+      </label>
+      <ul class='links'>
+        <li><a class='show' href='/'>Strona główna</a></li>
+        <li><a class='show' href='/#portfolio'>Portfolio</a></li>
+        <li><a class='show' href='/blog'>Blog</a></li>
+        <li><a class='show' href='/kontakt'>Kontakt</a></li>
+      </ul>
+    </div>
+  </nav>
+</header>
 
 <style>
   nav {

@@ -12,7 +12,7 @@ const { data } = await storyblokApi.get(`cdn/stories`, {
 const articles = data.stories
 ---
 
-<div class='headline'>
+<header class='headline'>
   <div class='headline-text'>
     <div class='main-text'>
       Our own
@@ -25,7 +25,7 @@ const articles = data.stories
       your disposal.
     </div>
   </div>
-</div>
+</header>
 <div class='blog-highlight'>
   {
     articles?.length &&
