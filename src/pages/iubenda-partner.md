@@ -3,111 +3,81 @@ layout: ../layouts/LandingPageLayout.astro
 title: Find out how We Can Help You Adapt Your Site or App to the Regulations
 description: Find out what makes Astro awesome!
 ---
-# Find out how We Can Help You Adapt Your Site or App to the Regulations
+# Dowiedz się, jak możemy pomóc Ci dostosować Twoją stronę lub aplikację do przepisów
 
+Strony internetowe i aplikacje muszą zawsze spełniać określone wymagania narzucone przez prawo. Niezastosowanie się do tych wymagań może skutkować poważnymi karami, w tym wysokimi grzywnami, audytami i potencjalnymi procesami sądowymi.
 
-Websites and apps must always comply with certain requirements imposed by law. Failure to comply with the legal requirements, can result in serious penalties including substantial fines, audits and potential litigation.
+Z tego powodu **zdecydowaliśmy się polegać na iubenda**, firmie zbudowanej na ekspertyzie prawnej i technicznej, która specjalizuje się w tej dziedzinie. Wraz z iubenda, której jesteśmy Certyfikowanymi Partnerami, opracowaliśmy propozycję oferującą wszystkim naszym klientom prostą i bezpieczną odpowiedź na ich potrzeby zgodności.
 
-For this reason **we have chosen to rely on iubenda**, a company built on both legal and technical expertise, that specializes in this sector. Together with iubenda, of which we are Certified Partners, we have developed a proposal to offer all our customers a simple and safe solution to their compliance needs.
+## Przegląd głównych wymagań prawnych dla właścicieli stron internetowych i aplikacji
 
-## Overview of the Main Legal Requirements for Websites and Apps Owners
+### Polityka prywatności i plików cookie
 
-### Privacy and Cookie Policy
+Prawo wymaga, aby każda strona/aplikacja zbierająca dane osobowe **ujawniała użytkownikom odpowiednie szczegóły za pośrednictwem dedykowanych powiadomień o polityce prywatności i plikach cookie**.
 
-The law obliges each site/app that collects personal data to **disclose relevant details to users via dedicated privacy and cookie notices**.
+Polityki prywatności muszą zawierać pewne fundamentalne elementy specyficzne dla Twojej działalności przetwarzania, w tym:
 
-Privacy policies must contain certain fundamental elements specific to your particular processing activities, including:
+- dane kontaktowe i identyfikacyjne administratora danych;
+- jakie dane osobowe są przetwarzane;
+- cele i metody przetwarzania;
+- kategorie źródeł, z których są zbierane dane konsumentów;
+- podstawy prawne przetwarzania (np. zgoda);
+- strony trzecie, które mogą mieć dostęp do danych - w tym wszelkie narzędzia stron trzecich (np. Google Analytics);
+- szczegóły dotyczące transferu danych poza Unię Europejską (jeśli dotyczy);
+- prawa użytkownika;
+- opis procesu powiadamiania o zmianach lub aktualizacjach polityki prywatności;
+- data wejścia w życie polityki prywatności.
 
-- the contact and identifying details of the data controller;
-- which personal data is being processed;
-- the purposes and methods of processing;
-- the categories of sources from which consumers' data is being collected;
-- the legal bases of processing (e.g., consent);
-- the third-parties that may also access the data - this includes any third-party tools (e.g., Google Analytics);
-- details relating to the transfer of data outside the European Union (where it applies);
-- the rights of the user;
-- description of notification process for changes or updates to the privacy policy;
-- the effective date of the privacy policy.
+Polityka plików cookie szczegółowo opisuje różne rodzaje plików cookie instalowanych przez stronę, wszelkie strony trzecie, do których odnoszą się te pliki cookie - w tym link do odpowiednich dokumentów i formularzy rezygnacji - oraz cele przetwarzania.
 
-The cookie policy specifically describes the different types of cookies installed through the site, any third-parties to which these cookies refer – including a link to the respective documents and opt-out forms – and the purposes of the processing.
+**_Czy możemy użyć ogólnego dokumentu?_** Nie jest możliwe używanie ogólnych dokumentów, ponieważ Twoja polityka musi **szczegółowo opisywać specyficzne przetwarzanie danych prowadzone przez Twoją stronę/aplikację** i musi również zawierać szczegóły dotyczące wszelkich technologii stron trzecich (np. przyciski Lubię to na Facebooku czy Google Maps), które są przez Ciebie używane.
 
-**_Can't we use a generic document?_** It's not possible to use generic documents as your policy must **describe in detail the specific data processing carried out by your site/app**, and must also include the particular details of any third-party technologies (e.g., facebook Like buttons or Google Maps) specifically used by you.
+**_Co jeśli moja strona nie przetwarza żadnych danych?_** Bardzo trudno jest, aby Twoja strona nie przetwarzała żadnych danych. Prosty formularz kontaktowy lub system analizy ruchu, taki jak Google Analytics, wystarczy, aby wywołać obowiązek przygotowania i wyświetlenia polityki prywatności i plików cookie.
 
-**_What if my site does not process any data?_** It's very difficult for your site not to process any data. A simple contact form or a traffic analysis system such as Google Analytics is enough to trigger the obligation to prepare and display a privacy and cookie policy.
+### Prawo UE dotyczące plików cookie
 
-### EU Cookie Law
+Oprócz zapewnienia łatwo dostępnej i dokładnej polityki plików cookie, **w celu dostosowania strony internetowej do prawa dotyczącego plików cookie, konieczne jest również wyświetlenie informacyjnego bannera plików cookie, który łączy się ze szczegółową polityką plików cookie przy pierwszej wizycie każdego użytkownika, dając użytkownikowi możliwość odrzucenia lub wyrażenia zgody na instalację plików cookie**. Większość rodzajów plików cookie, w tym tych wydawanych przez narzędzia, takie jak przyciski udostępniania w mediach społecznościowych, powinna być wydawana dopiero po uzyskaniu ważnej zgody użytkownika.
 
-In addition to providing an easily available and accurate cookie policy, **in order to adapt a website to the cookie law, it is also necessary to show an informative cookie banner which links to a detailed cookie policy at the first visit of each user, giving the user the opportunity to either reject or grant consent to the installation of cookies**. Most types of cookies, including those issued by tools such as social sharing buttons, should only be released after the user have provided a valid consent.
+Ponadto, wiele sieci dostawców zewnętrznych może ograniczyć zasięg reklamowy, jeśli nie masz systemu zarządzania plikami cookie, który spełnia standardy branżowe - co potencjalnie zmniejsza Twoją zdolność do generowania dochodów z reklam.
 
-Furthermore, many third-party vendor networks may limit ad reach if you do not have a cookie management system that meets industry standards in place - potentially reducing your ability to generate ad revenue.
-
-**_What is a cookie?_** Cookies are small files used to store or track certain information while a user browses a site. Cookies are now essential to the proper functioning of a site. In addition, many third-party technologies that we integrate into our sites, such as simple video widgets or analytics programs, also use cookies.
+**_Co to jest plik cookie?_** Pliki cookie to małe pliki używane do przechowywania lub śledzenia określonych informacji podczas przeglądania strony przez użytkownika. Pliki cookie są teraz niezbędne do prawidłowego funkcjonowania strony. Ponadto, wiele technologii stron trzecich, które integrujemy na naszych stronach, takich jak proste widżety wideo czy programy analityczne, również korzysta z plików cookie.
 
 ### CCPA
 
-CCPA requires that businesses **inform California users about how and why their data is being used, their rights in regards to this and how they can exercise these rights** – including the right to opt-out. In order to comply with these requirements, you need to include both the relevant disclosures within your privacy policy and display a notice of collection at the first user's visit (where applicable).
+CCPA wymaga, aby firmy **informowały użytkowników z Kalifornii o tym, jak i dlaczego ich dane są wykorzystywane, o ich prawach w tym zakresie i jak mogą z nich korzystać** - w tym prawo do rezygnacji. Aby spełnić te wymagania, musisz zawrzeć zarówno odpowiednie ujawnienia w swojej polityce prywatności, jak i wyświetlić powiadomienie o zbieraniu danych przy pierwszej wizycie użytkownika (jeśli dotyczy).
 
-**The process which allows the user to opt-out should be facilitated via a "Do Not Sell My Personal Information" (DNSMPI) link** which should be accessible from your notice of collection and elsewhere on your site (best practice would be to also include the link in the footer).
+**Proces umożliwiający użytkownikowi rezygnację powinien być ułatwiony poprzez link "Nie sprzedawaj moich danych osobowych" (DNSMPI)**, który powinien być dostępny z powiadomienia o zbieraniu danych i w innych miejscach na Twojej stronie (najlepszą praktyką byłoby również umieszczenie linku w stopce).
 
-_**My business is not based in California, do I need to comply with CCPA?**_ The CCPA applies to most businesses that collect or could potentially collect Californian customers personal information, whether or not the business itself is geographically located in California. Since IP addresses are considered personal information, this likely applies to any website with at least 50,000 unique visits per year from California.
+_**Moja firma nie ma siedziby w Kalifornii, czy muszę przestrzegać CCPA?**_ CCPA ma zastosowanie do większości firm, które zbierają lub mogą potencjalnie zbierać dane osobowe klientów z Kalifornii, niezależnie od tego, czy firma znajduje się geograficznie w Kalifornii. Ponieważ adresy IP są uważane za dane osobowe, prawdopodobnie dotyczy to każdej strony internetowej z co najmniej 50 000 unikalnych wizyt rocznie z Kalifornii.
 
-### Consent according to GDPR and LGPD
+### Zgoda zgodnie z RODO i LGPD
 
-When a user directly enters personal data on a site/app, for example by filling in a contact form, service registration or newsletter subscription, it is necessary to **collect consent that is freely given, specific and informed. Under the GDPR, it's also necessary to keep unambiguous records that allow you to demonstrate that valid consent was collected**.
+Kiedy użytkownik bezpośrednio wprowadza dane osobowe na stronie/aplikacji, na przykład wypełniając formularz kontaktowy, rejestrując się w usłudze lub zapisując się na newsletter, konieczne jest **uzyskanie zgody, która jest dobrowolna, konkretna i świadoma. Zgodnie z RODO, konieczne jest również przechowywanie jednoznacznych zapisów, które pozwalają na wykazanie, że zgoda została uzyskana w sposób ważny**.
 
-Similar to the GDPR, **the Brazilian LGPD also requires the data controller to provide an unambiguous proof of consent**, giving evidence that the user's consent was collected by a valid means.
+Podobnie jak RODO, **brazylijskie LGPD również wymaga od administratora danych dostarczenia jednoznacznego dowodu zgody**, co oznacza, że zgoda użytkownika została uzyskana w sposób ważny.
 
-**_What is free, specific and informed consent?_** You must obtain consent for each specific processing purpose – for example, a consent to send newsletters and another consent to send promotional material on behalf of third-parties. Consent may be requested by setting up one or more checkboxes that are not pre-selected, not mandatory or coerced (freely given) and accompanied by relevant disclosures that make it clear to the user how his or her data will be used.
+**_Co to jest dobrowolna, konkretna i świadoma zgoda?_** Musisz uzyskać zgodę na każdy konkretny cel przetwarzania - na przykład zgoda na wysyłanie newsletterów i osobna zgoda na wysyłanie materiałów promocyjnych w imieniu stron trzecich. Zgoda może być uzyskana poprzez ustawienie jednego lub więcej pól wyboru, które nie są domyślnie zaznaczone, nie są obowiązkowe ani wymuszone (dobrowolne) i towarzyszą im odpowiednie ujawnienia, które jasno informują użytkownika, w jaki sposób jego dane będą wykorzystywane.
 
-**_How can proof of valid consent be demonstrated unambiguously?_** A range of information must be collected each time a user fills in a form on your site/app. This information includes a unique user identification code, the content of the privacy policy accepted, a copy of the form submitted by the user as well as a record of the opt-in mechanism used.
+**_Jak można jednoznacznie wykazać dowód ważnej zgody?_** Za każdym razem, gdy użytkownik wypełnia formularz na Twojej stronie/aplikacji, należy zebrać szereg informacji. Informacje te obejmują unikalny kod identyfikacyjny użytkownika, treść zaakceptowanej polityki prywatności, kopię formularza przesłanego przez użytkownika oraz zapis mechanizmu opt-in.
 
-**_Is the email I receive from the user as a result of filling out a form not sufficient as proof of consent?_** Unfortunately, it is not sufficient, as some information necessary to reconstruct the suitability of the procedure for collecting consent is missing, such as a copy of the form actually completed by the user and the version of the privacy documents available to the user at the time the consent was collected.
+**_Czy e-mail otrzymany od użytkownika w wyniku wypełnienia formularza nie jest wystarczającym dowodem zgody?_** Niestety, nie jest wystarczający, ponieważ brakuje pewnych informacji niezbędnych do odtworzenia odpowiedniości procedury zbierania zgody, takich jak kopia formularza faktycznie wypełnionego przez użytkownika oraz wersja dokumentów prywatności dostępnych dla użytkownika w momencie zbierania zgody.
 
-**_Do I have to comply with the LGPD even if my organization is not based in Brazil?_** The LGPD has a territorial scope that extends outside of Brazil. This means that you may have to comply even if you or your business are not based in Brazil. Therefore, you fall under the LGPD scope if you process data from individuals located within the Brazilian territory, regardless of their nationality (even if they were in Brazil only at the time of data collection, and have since moved).
+**_Czy muszę przestrzegać LGPD, nawet jeśli moja organizacja nie ma siedziby w Brazylii?_** LGPD ma zasięg terytorialny, który rozciąga się poza Brazylię. Oznacza to, że możesz musieć przestrzegać przepisów, nawet jeśli Ty lub Twoja firma nie mają siedziby w Brazylii. W związku z tym pod
 
-### Terms and Conditions
+legasz przepisom LGPD, jeśli przetwarzasz dane osobowe osób przebywających w Brazylii lub oferujesz towary i usługi osobom przebywającym w Brazylii, niezależnie od lokalizacji Twojej organizacji.
 
-In certain circumstances it can be necessary to protect your online business from potential liabilities with a Terms and Conditions document. Though not always legally required, **Terms and Conditions set the way in which your product, service or content may be used, in a legally binding way.**
+## Zabezpiecz swoją działalność dzięki iubenda
 
-The Terms and Conditions typically contain copyright clauses, disclaimers, terms of sale, allow you to set governing law, list mandatory consumer protection clauses, and more.
+W związku z częstymi aktualizacjami wymogów regulacyjnych i licznymi wymaganiami obowiązującymi w różnych krajach, upewnienie się, że Twoja strona/aplikacja jest zawsze zgodna z przepisami, może być trudnym zadaniem.
 
-The Terms and Conditions should at least include:
+Iubenda oferuje szeroki zakres rozwiązań, które pomagają właścicielom stron internetowych i aplikacji zarządzać zgodnością. Są to:
 
-- the identification of the business;
-- a description of the service that your site/app provides;
-- information on risk allocation, liability, and disclaimers;
-- warranty/guarantee information;
-- the existence of a withdrawal right;
-- safety information, including instructions for proper use (e.g., terms of delivery of product/service);
-- rights of use;
-- conditions of use/purchase (e.g., age requirements or location-based restrictions);
-- refund policy/exchange/termination of service and related information;
-- information related to methods of payment.
+- **iubenda Compliance Solutions**, obejmujące Polityki Prywatności i Plików Cookie, Bannery Plików Cookie i Mechanizmy Zarządzania Zgodą, Narzędzia do Zgodności z CCPA i wiele innych.
+- **Aktualizacje Prawne i Technologiczne**, które gwarantują, że Twoje dokumenty i systemy zgodności są zawsze aktualne z najnowszymi przepisami.
+- **Integracja z Popularnymi Platformami**, takimi jak WordPress, Shopify, Wix i wieloma innymi, co ułatwia instalację i konfigurację.
 
-_**When is it mandatory to have Terms and Conditions?**_ Everyone from bloggers to e-commerce, SaaS, and enterprise businesses can benefit from setting Terms of Use. However, in some cases it can be mandatory, such as in the case of e-commerce, where payment data is processed.
+Jako Certyfikowani Partnerzy iubenda, oferujemy nasze wsparcie i doświadczenie, aby pomóc Ci zrozumieć Twoje obowiązki prawne i w pełni je spełniać. Wykorzystując iubenda, Twoja strona internetowa lub aplikacja będą nie tylko zgodne z przepisami, ale również zapewnią użytkownikom poczucie bezpieczeństwa i zaufania, co jest kluczowe dla długoterminowego sukcesu w Internecie.
 
-_**Can I copy and use a Terms and Conditions document from another site?**_ Because they are essentially a legally binding agreement, it is not only important to have one in place, but also necessary to ensure that it meets legal requirements and it matches your specific business processes, model, and remains up-to-date with the various laws referenced in its contents. Copy-pasting Terms and Conditions from other sites is very risky and could result in the document being void or unenforceable.
+### Skontaktuj się z nami, aby dowiedzieć się więcej
 
-## How We Can Help You Using Iubenda's Solutions
-
-Thanks to our partnership with iubenda, we can help you configure everything you need to make your site/app compliant. **iubenda is in fact the simplest, most complete and professional solution to comply with regulations**_._
-
-### Privacy and Cookie Policy Generator
-
-With iubenda's Privacy and Cookie Policy Generator we can prepare a fully customized, self-updating policy for your site/app. iubenda's policies are generated starting from a database of clauses drafted and continuously reviewed by an international team of lawyers.
-
-### Cookie Solution
-
-The iubenda Cookie Solution is a comprehensive solution to meet EU Cookie Law, CCPA and any other third-party requirements by facilitating the display of a GDPR-compliant cookie banner or a CCPA notice of collection at each user's first visit, the preventive blocking of the profiling cookies and the collection of users' consent to the installation of cookies. It also supports opt-out from sale for Californian users via a "Do Not Sell My Personal Information" link.
-
-### Consent Solution
-
-iubenda's Consent Solution allows the collection and storage of an unambiguous proof of consent whenever a user fills out a form – such as a contact form or newsletter subscription – on your website or app, as required by the GDPR and the Brazilian LGPD.
-
-The solution can also be used to document opt-out requests from Californian consumers, as imposed by the CCPA.
-
-### TERMS AND CONDITIONS Generator
-
-With iubenda's Terms and Conditions Generator we can prepare a fully customized, self-updating T&C document for your site/app. iubenda's Terms and Conditions are generated starting from a database of clauses drafted and continuously reviewed by an international team of lawyers.
-
-**Contact us to receive a personalized proposal →**
+Jeśli chcesz dowiedzieć się więcej o tym, jak możemy pomóc Ci dostosować Twoją stronę lub aplikację do przepisów z pomocą iubenda, skontaktuj się z nami już dziś. Nasi specjaliści są gotowi, aby odpowiedzieć na wszelkie pytania i pomóc Ci zabezpieczyć swoją działalność online.
