@@ -45,3 +45,54 @@
     </div>
   </section>
 </div>
+
+<style>
+  .headline-content {
+    margin: 50px 0;
+    display: flex;
+    align-items: center;
+    gap: 40px;
+    flex-wrap: wrap;
+    justify-content: center;
+  }
+
+  .headline-card {
+    padding: 20px;
+    background-color: var(--whiteBackground);
+    display: flex;
+    flex-direction: column;
+    gap: 8px;
+    width: 300px;
+    border-radius: 20px;
+    height: 250px;
+  }
+
+  .card-title {
+    font-size: 18px;
+    font-weight: 700;
+  }
+
+  .card-content {
+    text-align: justify;
+    hyphens: auto;
+    line-height: 24px;
+  }
+
+  .footnote {
+    font-size: 12px;
+    text-align: right;
+  }
+
+  @media (min-width: 1024px) {
+    .headline-text {
+      width: 60%;
+    }
+
+    .headline-card:hover {
+      transition: ease-out 0.1s;
+      transition: ease-in 0.1s;
+      transform: scale(1.05);
+      box-shadow: var(--accentedColor) 1.95px 1.95px 2.6px;
+    }
+  }
+</style>

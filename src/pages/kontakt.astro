@@ -83,3 +83,109 @@ import BaseLayout from '../layouts/BaseLayout.astro'
     </form>
   </main>
 </BaseLayout>
+
+<style>
+  .contact-section {
+    margin-inline: auto;
+    margin-top: 20px;
+  }
+
+  #survey-form {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    background-color: #10bbb54e;
+    padding: 20px 40px;
+    gap: 20px;
+    border-radius: 10px;
+  }
+
+  .contact-highlight {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+  }
+
+  .contact-title {
+    font-size: 42px;
+    font-weight: 700;
+    color: var(--primaryText);
+    letter-spacing: -2px;
+  }
+
+  .contact-description {
+    font-size: 20px;
+    color: #575757;
+  }
+
+  .contact-content,
+  #checkbox,
+  #textarea {
+    display: flex;
+    flex-direction: column;
+    gap: 10px;
+  }
+
+  /* #textarea {
+  border-radius: 10px;
+} */
+
+  .checkbox-style {
+    display: flex;
+    gap: 10px;
+  }
+
+  label {
+    font-size: 18px;
+    color: var(--primaryText);
+    display: flex;
+    flex-wrap: wrap;
+    gap: 10px 10px;
+  }
+
+  label > select,
+  label > input {
+    padding: 5px;
+    color: #575757;
+    background-color: #ffffff;
+    border-radius: 10px;
+    border: 1px solid rgb(27, 31, 35);
+    font-size: 14px;
+  }
+
+  .checkbox-style > p {
+    color: #414141;
+  }
+
+  #submit {
+    appearance: none;
+    background-color: var(--primaryText);
+    border: 1px solid rgba(27, 31, 35, 0.15);
+    border-radius: 6px;
+    box-shadow: rgba(27, 31, 35, 0.1) 0 1px 0;
+    box-sizing: border-box;
+    color: #fff;
+    cursor: pointer;
+    display: inline-block;
+    font-size: 14px;
+    font-weight: 600;
+    line-height: 20px;
+    padding: 6px 16px;
+    position: relative;
+    text-align: center;
+    text-decoration: none;
+    user-select: none;
+    -webkit-user-select: none;
+    touch-action: manipulation;
+    vertical-align: middle;
+    white-space: nowrap;
+    width: 100px;
+    align-self: center;
+  }
+
+  #submit:hover {
+    background-color: var(--accentedColor);
+    color: #bb1016;
+  }
+</style>

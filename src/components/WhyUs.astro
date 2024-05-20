@@ -33,3 +33,59 @@ import SiteFeature from './SiteFeature.astro'
     </div>
   </div>
 </section>
+
+<style>
+  .site-main-text {
+    font-size: 32px;
+    color: var(--primaryText);
+    font-weight: 700;
+    align-self: center;
+    letter-spacing: -0.5px;
+  }
+
+  .site {
+    background-color: rgb(244, 244, 244);
+    padding: 50px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    gap: 50px;
+    flex-direction: column;
+    margin: auto;
+  }
+
+  img {
+    width: 40vw;
+    height: auto;
+  }
+
+  .site-text {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    gap: 20px;
+    padding: 0 20px;
+    text-align: justify;
+    hyphens: auto;
+  }
+
+  ul {
+    display: flex;
+    flex-direction: column;
+    gap: 20px;
+  }
+
+  li {
+    display: flex;
+    gap: 10px;
+    line-height: 24px;
+  }
+
+  @media (min-width: 1024px) {
+    .site {
+      flex-direction: row;
+      padding: 50px 100px;
+      margin-bottom: 50px;
+    }
+  }
+</style>

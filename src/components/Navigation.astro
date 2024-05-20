@@ -38,7 +38,7 @@ import { Icon } from 'astro-icon/components'
 </script>
 
 <!-- https://www.youtube.com/watch?v=8eFeIFKAKHw -->
-<nav id='navbar' class='navbar'>
+<nav id='navbar'>
   <a href='/' class='logo'>
     <Image class='logo-img' src={logo} alt='logo' loading='eager' />
     <div class='logo-text'>StronaFirmy.pl</div>
@@ -61,3 +61,165 @@ import { Icon } from 'astro-icon/components'
     </ul>
   </div>
 </nav>
+
+<style>
+  nav {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    background-image: linear-gradient(
+      to bottom,
+      var(--accentedColor),
+      #10bbb55c,
+      rgba(255, 255, 255, 1)
+    );
+    height: 12svh;
+    min-height: 60px;
+    position: fixed;
+    width: 100vw;
+    background-color: rgba(255, 255, 255, 0.9);
+  }
+
+  .header {
+    display: flex;
+    align-items: center;
+    height: 100vh;
+    color: var(--primaryText);
+    flex-direction: column;
+    position: fixed;
+    top: 0;
+    right: -100%;
+    z-index: 10;
+    box-shadow: -5px 0 5px rgba(0, 0, 0, 0.25);
+    transition: 0.75s ease-out;
+    background-color: var(--accentedColor);
+    padding: 20px;
+  }
+
+  #sidebar-active:checked ~ .header {
+    right: 0;
+  }
+
+  .logo {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    gap: 10px;
+    margin-left: 50px;
+  }
+
+  .logo-img {
+    height: 40px;
+    width: auto;
+    margin-bottom: 2px;
+  }
+
+  .logo-text {
+    font-size: 24px;
+    font-weight: 700;
+    margin-right: 30px;
+    letter-spacing: -0.5px;
+  }
+
+  .links {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    font-size: 20px;
+    gap: 40px;
+    flex-direction: column;
+  }
+
+  .links li,
+  .flex-container ol {
+    list-style-type: none;
+  }
+
+  .links li a {
+    padding: 20px 5px;
+  }
+
+  .show {
+    color: var(--primaryText);
+    transition: all 0.1s ease-in-out;
+  }
+
+  .links li a:hover {
+    transition: all 0.1s ease-in-out;
+    text-decoration: underline;
+    text-decoration-color: var(--primaryText);
+    -webkit-text-stroke: 1px black;
+    text-decoration-style: solid;
+    text-decoration-thickness: 3px;
+    text-underline-position: under;
+    text-underline-offset: 1px;
+  }
+
+  .hidden {
+    color: var(--headerText);
+    transition: ease-out 0.1s;
+    transition: ease-in 0.1s;
+  }
+
+  #sidebar-active {
+    display: none;
+  }
+
+  .open-sidebar-button {
+    margin-left: auto;
+    padding: 20px;
+    display: block;
+  }
+
+  .close-sidebar-button {
+    align-self: flex-end;
+    padding-bottom: 50px;
+    display: block;
+  }
+
+  #sidebar-active:checked ~ #overlay {
+    height: 100%;
+    width: 100%;
+    position: fixed;
+    top: 0;
+    left: 0;
+    z-index: 9;
+  }
+
+  @media (min-width: 1024px) {
+    nav {
+      display: flex;
+      justify-content: space-between;
+      z-index: 1;
+    }
+
+    .header {
+      height: 80px;
+      flex-direction: row;
+      align-items: center;
+      margin-right: 50px;
+
+      position: static;
+      top: auto;
+      right: auto;
+      z-index: auto;
+
+      box-shadow: none;
+      transition: none;
+      background-color: transparent;
+    }
+
+    .links {
+      flex-direction: row;
+    }
+
+    .links li a:hover {
+      text-decoration-color: var(--accentedColor);
+    }
+
+    .open-sidebar-button,
+    .close-sidebar-button {
+      display: none;
+    }
+  }
+</style>
