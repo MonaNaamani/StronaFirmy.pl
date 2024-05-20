@@ -4,51 +4,16 @@ import { Image } from 'astro:assets'
 const { imgSrc, imgAlt, text, href } = Astro.props
 ---
 
-<li>
+<div>
   <a href={href}>
     <Image src={imgSrc} width='48' height='48' alt={imgAlt} class='icon' />
     <p class='service-text'>{text}</p>
     {href && <p class='learn-more'>Dowiedz się więcej</p>}
   </a>
-</li>
+</div>
 
 <style>
-  li {
-    display: flex;
-    flex-direction: column;
-    align-items: center;
-    justify-content: center;
-    text-align: center;
-    background-color: var(--whiteBackground);
-    width: 300px;
-    height: 250px;
-    padding: 20px;
-    justify-content: flex-start;
-    text-align: justify;
-    hyphens: auto;
-    border-radius: 20px;
-  }
-
-  .icon {
-    margin-bottom: 20px;
-  }
-
-  p {
-    line-height: 24px;
-  }
-
-  .learn-more {
-    font-weight: 700;
-    text-align: center;
-    padding-top: 20px;
-  }
-
-  @media (min-width: 1024px) {
-    li:hover {
-      transition: ease-out 0.1s;
-      transition: ease-in 0.1s;
-      transform: scale(1.05);
-      box-shadow: var(--accentedColor) 1.95px 1.95px 2.6px;
-    }
+  div {
+    background-color: var(--accentedColor);
   }
 </style>
