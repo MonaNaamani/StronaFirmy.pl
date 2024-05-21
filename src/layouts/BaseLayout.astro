@@ -9,7 +9,7 @@ export interface Props {
   description: string
 }
 
-const { title = 'StronaFirmy.pl', description } = Astro.props as Props
+const { title = 'StronaFirmy.pl', description = '' } = Astro.props as Props
 ---
 
 <!doctype html>
