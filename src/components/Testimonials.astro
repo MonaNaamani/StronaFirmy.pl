@@ -2,9 +2,9 @@
 import Testimonial from './Testimonial.astro'
 ---
 
-<section class='testimonial-section' aria-labelledby='testimonials'>
+<section aria-labelledby='testimonials'>
   <h2 class='section-header' id='testimonials'>Co mówią o nas nasi Klienci?</h2>
-  <div class='testimonials-container'>
+  <div>
     <Testimonial
       quote={`If you do the job badly enough, sometimes you don't get asked to do it again.`}
       name='Wisteria Ravenclaw'
@@ -26,12 +26,10 @@ import Testimonial from './Testimonial.astro'
 </section>
 
 <style>
-  .testimonial-section {
-    padding: 0 100px 50px 100px;
+  section {
     z-index: -1;
-    align-self: center;
   }
-  .testimonials-container {
+  div {
     display: flex;
     flex-wrap: wrap;
     justify-content: center;
