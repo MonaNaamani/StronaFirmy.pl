@@ -3,38 +3,53 @@
 ---
 
 <footer>
-  <p class='disclaimer'>
-    Na stronie występują linki afiliacyjne. Po kliknięciu w nie możesz zapoznać
-    się z ich ofertą - za skorzystanie z oferty właściciel strony może otrzymać
-    prowizję od reklamodawcy, z którym współpracuje.
-  </p>
-  <p>Copyright © Mona Naamani & Ela Bogucka</p>
-  <p>
-    Icons by <a target='_blank' href='https://icons8.com' rel='nofollow'
-      >Icons8</a
-    >
-  </p>
+  <div class='footer-content'>
+    <h2>StronaFirmy.pl</h2>
+    <p>
+      Na stronie występują linki afiliacyjne. Po kliknięciu w nie możesz
+      zapoznać się z ich ofertą - za skorzystanie z oferty właściciel strony
+      może otrzymać prowizję od reklamodawcy, z którym współpracuje.
+    </p>
+    <p>
+      Made with ❤️ by Mona Naamani & Ela Bogucka | Icons by <a
+        target='_blank'
+        href='https://icons8.com'
+        rel='nofollow'>Icons8</a
+      >
+    </p>
+  </div>
 </footer>
 
 <style>
   footer {
-    display: flex;
-    justify-content: space-between;
-    align-items: center;
-    height: 80px;
-    margin-left: 50px;
-    margin-right: 50px;
-    color: var(--secondaryText);
-    display: flex;
-    flex-direction: column;
-    padding: 20px;
-    margin-bottom: 50px;
-    margin-top: 100px;
+    height: auto;
+    width: 100vw;
+    padding-top: 40px;
+    background-color: var(--footerBackground);
   }
 
-  .disclaimer {
-    margin-bottom: 10px;
-    font-size: 12px;
+  a {
+    color: var(--accentedColor);
+    text-decoration: dotted underline;
+  }
+
+  .footer-content {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    flex-direction: column;
+    text-align: center;
+  }
+
+  .footer-content h2 {
+    color: var(--footerText);
+  }
+
+  .footer-content p {
+    max-width: 500px;
+    margin: 10px auto;
+    font-size: 14px;
+    color: var(--footerText);
     text-align: center;
   }
 </style>
