@@ -4,7 +4,7 @@ import BaseLayout from '../layouts/BaseLayout.astro'
 
 <BaseLayout title='StronaFirmy.pl | Kontakt' , description=''>
   <main class='contact-section'>
-    <form method='POST' id='form'>
+    <form action='https://api.web3forms.com/submit' method='POST' id='form'>
       <div class='contact-highlight'>
         <h1 class='contact-title'>Napisz do nas!</h1>
         <p class='contact-description'>
@@ -13,7 +13,11 @@ import BaseLayout from '../layouts/BaseLayout.astro'
         </p>
       </div>
       <div class='contact-content'>
-        <input type='hidden' name='access_key' value='ba94798d-d28c-4a42-98bb-b4f51e001a47' />
+        <input
+          type='hidden'
+          name='access_key'
+          value='ba94798d-d28c-4a42-98bb-b4f51e001a47'
+        />
         <input
           type='hidden'
           name='subject'
@@ -22,7 +26,7 @@ import BaseLayout from '../layouts/BaseLayout.astro'
         <label id='textarea'
           >Co możemy dla Ciebie zrobić?
           <textarea
-            id='wiadomosc'
+            name='wiadomosc'
             placeholder='Wpisz tutaj swoją wiadomość'
             style='height: 101px;'
             required></textarea>
@@ -31,7 +35,7 @@ import BaseLayout from '../layouts/BaseLayout.astro'
           >Imię:
           <input
             type='text'
-            id='imie'
+            name='imie'
             placeholder='Imię'
             height='100'
             required
@@ -41,7 +45,7 @@ import BaseLayout from '../layouts/BaseLayout.astro'
           >Nazwisko:
           <input
             type='text'
-            id='nazwisko'
+            name='nazwisko'
             placeholder='Nazwisko'
             height='100'
             required
@@ -51,7 +55,7 @@ import BaseLayout from '../layouts/BaseLayout.astro'
           >Nazwa firmy:
           <input
             type='text'
-            id='firma'
+            name='firma'
             placeholder='Nazwa firmy (opcjonalnie)'
             height='100'
           />
@@ -60,12 +64,13 @@ import BaseLayout from '../layouts/BaseLayout.astro'
           >Jaka jest Twoja aktualna rola w firmie?
           <input
             type='text'
-            id='rola'
+            name='rola'
             placeholder='Rola (opcjonalnie)'
             height='100'
           />
         </label>
-        <div class='h-captcha' data-captcha='true' data-lang='pl'></div>
+        <div class='h-captcha' data-captcha='true' data-lang='pl' id='captcha'>
+        </div>
         <button type='submit' id='submit' class='button-style'>Wyślij</button>
         <div id='result'></div>
       </div>
@@ -78,6 +83,19 @@ import BaseLayout from '../layouts/BaseLayout.astro'
   const result = document.getElementById('result')
 
   form.addEventListener('submit', function (e) {
+    const hCaptcha = form.querySelector(
+      'textarea[name=h-captcha-response]'
+    ).value
+
+    if (!hCaptcha) {
+      e.preventDefault()
+      result.innerHTML = 'Proszę potwierdzić, że jesteś człowiekiem!'
+      setTimeout(() => {
+        result.innerHTML = ''
+      }, 3000)
+      return
+    }
+
     const formData = new FormData(form)
     e.preventDefault()
 
@@ -239,5 +257,9 @@ import BaseLayout from '../layouts/BaseLayout.astro'
   #submit:hover {
     background-color: var(--accentedColor);
     color: #bb1016;
+  }
+
+  #result {
+    text-align: center;
   }
 </style>
