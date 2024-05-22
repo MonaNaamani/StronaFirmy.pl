@@ -4,93 +4,133 @@ import BaseLayout from '../layouts/BaseLayout.astro'
 
 <BaseLayout title='StronaFirmy.pl | Kontakt' , description=''>
   <main class='contact-section'>
-    <form id='survey-form'>
+    <form method='POST' id='form'>
       <div class='contact-highlight'>
-        <h1 class='contact-title'>Contact Us!</h1>
-        <p class='contact-description'>Let us know how we can help you.</p>
+        <h1 class='contact-title'>Napisz do nas!</h1>
+        <p class='contact-description'>
+          Zamów darmową wycenę lub dowiedz się więcej. Po wypełnieniu tego
+          formularza odezwiemy się do Ciebie najszybciej, jak to możliwe.
+        </p>
       </div>
       <div class='contact-content'>
-        <label id='name-label'
-          >Enter your name:
+        <input type='hidden' name='access_key' value='ba94798d-d28c-4a42-98bb-b4f51e001a47' />
+        <input
+          type='hidden'
+          name='subject'
+          value='Wiadomość ze StronaFirmy.pl'
+        />
+        <label id='textarea'
+          >Co możemy dla Ciebie zrobić?
+          <textarea
+            id='wiadomosc'
+            placeholder='Wpisz tutaj swoją wiadomość'
+            style='height: 101px;'
+            required></textarea>
+        </label>
+        <label
+          >Imię:
           <input
             type='text'
-            id='name'
-            placeholder='Enter your name'
+            id='imie'
+            placeholder='Imię'
             height='100'
             required
           />
         </label>
-        <label id='email-label'
-          >Enter your email:
+        <label
+          >Nazwisko:
           <input
-            type='email'
-            id='email'
-            placeholder='Enter your email'
+            type='text'
+            id='nazwisko'
+            placeholder='Nazwisko'
+            height='100'
             required
           />
         </label>
-        <label id='email-label'
-          >Enter your phone number:
+        <label
+          >Nazwa firmy:
           <input
-            type='tel'
-            id='phone'
-            placeholder='Enter your phone number'
-            required
+            type='text'
+            id='firma'
+            placeholder='Nazwa firmy (opcjonalnie)'
+            height='100'
           />
         </label>
-        <label for='dropdown'
-          >Which option best describes your current role?
-          <select id='dropdown'>
-            <option disabled selected value=''>Select current role</option>
-            <option value='1'>Student</option>
-            <option value='2'>Full Time Job</option>
-            <option value='3'>Prefer not to say</option>
-            <option value='4'>Other</option>
-          </select>
+        <label
+          >Jaka jest Twoja aktualna rola w firmie?
+          <input
+            type='text'
+            id='rola'
+            placeholder='Rola (opcjonalnie)'
+            height='100'
+          />
         </label>
-        <label id='checkbox'>
-          <div class='checkbox-div'>
-            What would you like to message us about? (Check all that apply)
-          </div>
-          <div class='checkbox-style'>
-            <input type='checkbox' value='front-end' />
-            <p>Front-end Projects</p>
-          </div>
-          <div class='checkbox-style'>
-            <input type='checkbox' value='back-end' />
-            <p>Back-end Projects</p>
-          </div>
-          <div class='checkbox-style'>
-            <input type='checkbox' value='data' />
-            <p>Quotation Request</p>
-          </div>
-          <div class='checkbox-style'>
-            <input type='checkbox' value='challenges' />
-            <p>Other</p>
-          </div>
-        </label>
-        <label id='textarea'
-          >Please leave your message below:
-          <textarea
-            id='comment'
-            placeholder='Enter your message here (Optional)'
-            style='height: 101px;'
-          >
-          </textarea>
-        </label>
-        <button id='submit' class='button-style'>Submit</button>
+        <div class='h-captcha' data-captcha='true' data-lang='pl'></div>
+        <button type='submit' id='submit' class='button-style'>Wyślij</button>
+        <div id='result'></div>
       </div>
     </form>
   </main>
 </BaseLayout>
 
+<script is:inline>
+  const form = document.getElementById('form')
+  const result = document.getElementById('result')
+
+  form.addEventListener('submit', function (e) {
+    const formData = new FormData(form)
+    e.preventDefault()
+
+    const object = Object.fromEntries(formData)
+    const json = JSON.stringify(object)
+
+    result.innerHTML = 'Proszę chwilę poczekać...'
+
+    fetch('https://api.web3forms.com/submit', {
+      method: 'POST',
+      headers: {
+        'Content-Type': 'application/json',
+        Accept: 'application/json',
+      },
+      body: json,
+    })
+      .then(async (response) => {
+        let json = await response.json()
+        if (response.status == 200) {
+          result.innerHTML = 'Wiadomość wysłana, dziękujemy!'
+        } else {
+          console.log(response)
+          result.innerHTML = json.message
+        }
+      })
+      .catch((error) => {
+        console.log(error)
+        result.innerHTML = 'Coś poszło nie tak!'
+      })
+      .then(function () {
+        form.reset()
+        setTimeout(() => {
+          result.style.display = 'none'
+        }, 3000)
+      })
+  })
+</script>
+
+<!-- hCaptcha -->
+<script is:inline src='https://web3forms.com/client/script.js' async defer
+></script>
+
 <style>
   .contact-section {
     margin-inline: auto;
     margin-top: 20px;
+    max-width: 600px;
+    margin-right: min(50px, 5%);
+    margin-left: min(50px, 5%);
+    align-self: center;
   }
 
-  #survey-form {
+  #form {
     display: flex;
     flex-direction: column;
     justify-content: center;
@@ -127,9 +167,12 @@ import BaseLayout from '../layouts/BaseLayout.astro'
     gap: 10px;
   }
 
-  /* #textarea {
-  border-radius: 10px;
-} */
+  textarea {
+    border-radius: 10px;
+    font-size: 14px;
+    line-height: 28px;
+    padding: 5px;
+  }
 
   .checkbox-style {
     display: flex;
@@ -142,6 +185,8 @@ import BaseLayout from '../layouts/BaseLayout.astro'
     display: flex;
     flex-wrap: wrap;
     gap: 10px 10px;
+    flex-direction: column;
+    margin-top: 20px;
   }
 
   label > select,
@@ -152,10 +197,16 @@ import BaseLayout from '../layouts/BaseLayout.astro'
     border-radius: 10px;
     border: 1px solid rgb(27, 31, 35);
     font-size: 14px;
+    line-height: 28px;
   }
 
   .checkbox-style > p {
     color: #414141;
+  }
+
+  .h-captcha {
+    margin-top: 20px;
+    align-self: center;
   }
 
   #submit {
@@ -182,6 +233,7 @@ import BaseLayout from '../layouts/BaseLayout.astro'
     white-space: nowrap;
     width: 100px;
     align-self: center;
+    margin-top: 20px;
   }
 
   #submit:hover {
