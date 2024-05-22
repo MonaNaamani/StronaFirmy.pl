@@ -97,19 +97,6 @@ main {
   margin-top: 20px;
 }
 
-.tag-button {
-  background-color: #d1d1d19c;
-  font-size: 16px;
-  color: var(--tertiary);
-  padding: 5px;
-  border: 0;
-  cursor: pointer;
-}
-
-.tag-button:hover {
-  color: var(--accented);
-}
-
 .flag-icon {
   height: 20px;
   width: 20px;

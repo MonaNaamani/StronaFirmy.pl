@@ -91,7 +91,8 @@ article {
   }
 }
 
-p, ul {
+p,
+ul {
   font-size: 16px;
   line-height: 26px;
   text-align: justify;
@@ -179,4 +180,23 @@ ul {
   flex-wrap: wrap;
   gap: 40px;
   justify-content: center;
+}
+
+.accented-text {
+  color: var(--accentedColor);
+}
+
+.tag-button {
+  background-color: #d1d1d19c;
+  font-size: 16px;
+  color: var(--tertiary);
+  margin: 0.25em;
+  border: dotted 1px #a1a1a1;
+  border-radius: 0.5em;
+  padding: 0.5em 1em;
+  background-color: #f8fcfd;
+}
+
+.tag-button:hover {
+  color: var(--accentedColor);
 }

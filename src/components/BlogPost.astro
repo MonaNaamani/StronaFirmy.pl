@@ -1,5 +1,41 @@
 ---
-const { url, title } = Astro.props
+import { Image } from 'astro:assets'
+import scheduleIcon from '../images/icons8-schedule-50.png'
+
+const { url, title, image, description, pubDate, tags } = Astro.props
 ---
 
-<li><a href={url}>{title}</a></li>
+<li class='blog-section'>
+  <div class='blog-img'>
+    {
+      image && (
+        <a href={url}>
+          <Image src={image.url} alt={image.alt} width={360} height={240} />
+        </a>
+      )
+    }
+  </div>
+  <div class='blog-text'>
+    <div class='blog-details'>
+      <div class='blog-date-icon'>
+        <Image class='blog-icon' src={scheduleIcon} alt='Schedule icon' />
+      </div>
+      <div class='blog-date'>{pubDate.toString().slice(0, 10)}</div>
+    </div>
+    <div class='blog-title'>
+      <a href={url}>
+        {title}
+      </a>
+    </div>
+    <div class='blog-description'>{description}</div>
+    <div class='tags'>
+      {
+        tags.map((tag) => (
+          <a href={`/tags/${tag}`} class='tag-button'>
+            {tag}
+          </a>
+        ))
+      }
+    </div>
+  </div>
+</li>

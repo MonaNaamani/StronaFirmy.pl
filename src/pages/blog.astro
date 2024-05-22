@@ -1,54 +1,37 @@
 ---
-import BaseLayout from '../layouts/BaseLayout.astro'
+import BlogLayout from '../layouts/BlogLayout.astro'
 import BlogPost from '../components/BlogPost.astro'
 const allPosts = await Astro.glob('../pages/posts/*.md')
-const pageTitle = 'My Astro Learning Blog'
+const pageTitle = 'StronaFirmy.pl | Blog'
 ---
 
-<BaseLayout title={pageTitle} description='Blog'>
-  <p>This is where I will post about my journey learning Astro.</p>
-  <ul>
+<BlogLayout title={pageTitle} description='Blog'>
+  <header class='headline'>
+    <div class='headline-text'>
+      <div class='main-text'>
+        Our own
+        <span class='accented-text'> personal blog </span>
+        right here!
+      </div>
+      <div class='secondary-text'>
+        Are you interested in learning more about certain things? If so, you've
+        come to the right place! Content updated regularly and free of charge at
+        your disposal.
+      </div>
+    </div>
+  </header>
+  <ul class='blog-highlight'>
     {
       allPosts.map((post) => (
-        <BlogPost url={post.url} title={post.frontmatter.title} />
+        <BlogPost
+          url={post.url}
+          title={post.frontmatter.title}
+          image={post.frontmatter.image}
+          description={post.frontmatter.description}
+          pubDate={post.frontmatter.pubDate}
+          tags={post.frontmatter.tags}
+        />
       ))
     }
   </ul>
-</BaseLayout>
-
-<!--
----
-import ArticleCard from './ArticleCard.astro'
----
-
-<header class='headline'>
-  <div class='headline-text'>
-    <div class='main-text'>
-      Our own
-      <span class='accented-text'> personal blog </span>
-      right here!
-    </div>
-    <div class='secondary-text'>
-      Are you interested in learning more about certain things? If so, you've
-      come to the right place! Content updated regularly and free of charge at
-      your disposal.
-    </div>
-  </div>
-</header>
-<div class='blog-highlight'>
-  {
-    articles?.length &&
-      articles.map((article) => {
-        article.content.slug = article.slug
-        return <ArticleCard article={article.content} />
-      })
-  }
-</div>
-
-<style>
-  .accented-text {
-    color: var(--accentedColor);
-  }
-</style>
-
--->
+</BlogLayout>
