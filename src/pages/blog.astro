@@ -1,15 +1,24 @@
 ---
-import { useStoryblokApi } from '@storyblok/astro'
-import ArticleCard from '../components/ArticleCard.astro'
+import BaseLayout from '../layouts/BaseLayout.astro'
+import BlogPost from '../components/BlogPost.astro'
+const allPosts = await Astro.glob('../pages/posts/*.md')
+const pageTitle = 'My Astro Learning Blog'
+---
 
-const storyblokApi = useStoryblokApi()
-const { data } = await storyblokApi.get(`cdn/stories`, {
-  version: 'draft', // or 'published'
-  starts_with: 'blog/',
-  is_startpage: false,
-})
+<BaseLayout title={pageTitle} description='Blog'>
+  <p>This is where I will post about my journey learning Astro.</p>
+  <ul>
+    {
+      allPosts.map((post) => (
+        <BlogPost url={post.url} title={post.frontmatter.title} />
+      ))
+    }
+  </ul>
+</BaseLayout>
 
-const articles = data.stories
+<!--
+---
+import ArticleCard from './ArticleCard.astro'
 ---
 
 <header class='headline'>
@@ -41,3 +50,5 @@ const articles = data.stories
     color: var(--accentedColor);
   }
 </style>
+
+-->
