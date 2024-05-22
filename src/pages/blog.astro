@@ -1,11 +1,13 @@
 ---
-import BlogLayout from '../layouts/BlogLayout.astro'
+import BaseLayout from '../layouts/BaseLayout.astro'
 import BlogPost from '../components/BlogPost.astro'
+import '../styles/blog.css'
+
 const allPosts = await Astro.glob('../pages/posts/*.md')
 const pageTitle = 'StronaFirmy.pl | Blog'
 ---
 
-<BlogLayout title={pageTitle} description='Blog'>
+<BaseLayout title={pageTitle} description='Blog'>
   <header class='headline'>
     <div class='headline-text'>
       <div class='main-text'>
@@ -34,4 +36,4 @@ const pageTitle = 'StronaFirmy.pl | Blog'
       ))
     }
   </ul>
-</BlogLayout>
+</BaseLayout>
