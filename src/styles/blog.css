@@ -7,7 +7,7 @@ main {
 }
 
 .headline {
-  min-height: 0;
+  min-height: 0 !important;
 }
 
 .main-text {
@@ -26,7 +26,7 @@ main {
 
 .blog-section {
   display: flex;
-  gap: 50px;
+  gap: 0 50px;
   flex-direction: column;
 }
 
