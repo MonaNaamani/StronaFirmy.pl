@@ -103,6 +103,7 @@ ul {
   word-wrap: break-word;
   overflow-wrap: break-word;
   hyphens: auto;
+  padding-bottom: 16px;
 
   @media screen and (min-width: 600px) {
     font-size: 18px;

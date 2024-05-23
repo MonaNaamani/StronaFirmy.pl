@@ -30,9 +30,14 @@ Polityki prywatności muszą zawierać pewne fundamentalne elementy specyficzne 
 
 Polityka plików cookie szczegółowo opisuje różne rodzaje plików cookie instalowanych przez stronę, wszelkie strony trzecie, do których odnoszą się te pliki cookie - w tym link do odpowiednich dokumentów i formularzy rezygnacji - oraz cele przetwarzania.
 
-**_Czy możemy użyć ogólnego dokumentu?_** Nie jest możliwe używanie ogólnych dokumentów, ponieważ Twoja polityka musi **szczegółowo opisywać specyficzne przetwarzanie danych prowadzone przez Twoją stronę/aplikację** i musi również zawierać szczegóły dotyczące wszelkich technologii stron trzecich (np. przyciski Lubię to na Facebooku czy Google Maps), które są przez Ciebie używane.
 
-**_Co jeśli moja strona nie przetwarza żadnych danych?_** Bardzo trudno jest, aby Twoja strona nie przetwarzała żadnych danych. Prosty formularz kontaktowy lub system analizy ruchu, taki jak Google Analytics, wystarczy, aby wywołać obowiązek przygotowania i wyświetlenia polityki prywatności i plików cookie.
+#### Czy możemy użyć ogólnego dokumentu?
+
+Nie jest możliwe używanie ogólnych dokumentów, ponieważ Twoja polityka musi **szczegółowo opisywać specyficzne przetwarzanie danych prowadzone przez Twoją stronę/aplikację** i musi również zawierać szczegóły dotyczące wszelkich technologii stron trzecich (np. przyciski Lubię to na Facebooku czy Google Maps), które są przez Ciebie używane.
+
+#### Co jeśli moja strona nie przetwarza żadnych danych?
+
+Bardzo trudno jest, aby Twoja strona nie przetwarzała żadnych danych. Prosty formularz kontaktowy lub system analizy ruchu, taki jak Google Analytics, wystarczy, aby wywołać obowiązek przygotowania i wyświetlenia polityki prywatności i plików cookie.
 
 ### Prawo UE dotyczące plików cookie
 
@@ -40,7 +45,9 @@ Oprócz zapewnienia łatwo dostępnej i dokładnej polityki plików cookie, **w 
 
 Ponadto, wiele sieci dostawców zewnętrznych może ograniczyć zasięg reklamowy, jeśli nie masz systemu zarządzania plikami cookie, który spełnia standardy branżowe - co potencjalnie zmniejsza Twoją zdolność do generowania dochodów z reklam.
 
-**_Co to jest plik cookie?_** Pliki cookie to małe pliki używane do przechowywania lub śledzenia określonych informacji podczas przeglądania strony przez użytkownika. Pliki cookie są teraz niezbędne do prawidłowego funkcjonowania strony. Ponadto, wiele technologii stron trzecich, które integrujemy na naszych stronach, takich jak proste widżety wideo czy programy analityczne, również korzysta z plików cookie.
+#### Co to jest plik cookie?
+
+Pliki cookie to małe pliki używane do przechowywania lub śledzenia określonych informacji podczas przeglądania strony przez użytkownika. Pliki cookie są teraz niezbędne do prawidłowego funkcjonowania strony. Ponadto, wiele technologii stron trzecich, które integrujemy na naszych stronach, takich jak proste widżety wideo czy programy analityczne, również korzysta z plików cookie.
 
 ### CCPA
 
@@ -48,7 +55,9 @@ CCPA wymaga, aby firmy **informowały użytkowników z Kalifornii o tym, jak i d
 
 **Proces umożliwiający użytkownikowi rezygnację powinien być ułatwiony poprzez link "Nie sprzedawaj moich danych osobowych" (DNSMPI)**, który powinien być dostępny z powiadomienia o zbieraniu danych i w innych miejscach na Twojej stronie (najlepszą praktyką byłoby również umieszczenie linku w stopce).
 
-_**Moja firma nie ma siedziby w Kalifornii, czy muszę przestrzegać CCPA?**_ CCPA ma zastosowanie do większości firm, które zbierają lub mogą potencjalnie zbierać dane osobowe klientów z Kalifornii, niezależnie od tego, czy firma znajduje się geograficznie w Kalifornii. Ponieważ adresy IP są uważane za dane osobowe, prawdopodobnie dotyczy to każdej strony internetowej z co najmniej 50 000 unikalnych wizyt rocznie z Kalifornii.
+#### Moja firma nie ma siedziby w Kalifornii, czy muszę przestrzegać CCPA?
+
+CCPA ma zastosowanie do większości firm, które zbierają lub mogą potencjalnie zbierać dane osobowe klientów z Kalifornii, niezależnie od tego, czy firma znajduje się geograficznie w Kalifornii. Ponieważ adresy IP są uważane za dane osobowe, prawdopodobnie dotyczy to każdej strony internetowej z co najmniej 50 000 unikalnych wizyt rocznie z Kalifornii.
 
 ### Zgoda zgodnie z RODO i LGPD
 
@@ -56,15 +65,21 @@ Kiedy użytkownik bezpośrednio wprowadza dane osobowe na stronie/aplikacji, na 
 
 Podobnie jak RODO, **brazylijskie LGPD również wymaga od administratora danych dostarczenia jednoznacznego dowodu zgody**, co oznacza, że zgoda użytkownika została uzyskana w sposób ważny.
 
-**_Co to jest dobrowolna, konkretna i świadoma zgoda?_** Musisz uzyskać zgodę na każdy konkretny cel przetwarzania - na przykład zgoda na wysyłanie newsletterów i osobna zgoda na wysyłanie materiałów promocyjnych w imieniu stron trzecich. Zgoda może być uzyskana poprzez ustawienie jednego lub więcej pól wyboru, które nie są domyślnie zaznaczone, nie są obowiązkowe ani wymuszone (dobrowolne) i towarzyszą im odpowiednie ujawnienia, które jasno informują użytkownika, w jaki sposób jego dane będą wykorzystywane.
+#### Co to jest dobrowolna, konkretna i świadoma zgoda?
 
-**_Jak można jednoznacznie wykazać dowód ważnej zgody?_** Za każdym razem, gdy użytkownik wypełnia formularz na Twojej stronie/aplikacji, należy zebrać szereg informacji. Informacje te obejmują unikalny kod identyfikacyjny użytkownika, treść zaakceptowanej polityki prywatności, kopię formularza przesłanego przez użytkownika oraz zapis mechanizmu opt-in.
+Musisz uzyskać zgodę na każdy konkretny cel przetwarzania - na przykład zgoda na wysyłanie newsletterów i osobna zgoda na wysyłanie materiałów promocyjnych w imieniu stron trzecich. Zgoda może być uzyskana poprzez ustawienie jednego lub więcej pól wyboru, które nie są domyślnie zaznaczone, nie są obowiązkowe ani wymuszone (dobrowolne) i towarzyszą im odpowiednie ujawnienia, które jasno informują użytkownika, w jaki sposób jego dane będą wykorzystywane.
 
-**_Czy e-mail otrzymany od użytkownika w wyniku wypełnienia formularza nie jest wystarczającym dowodem zgody?_** Niestety, nie jest wystarczający, ponieważ brakuje pewnych informacji niezbędnych do odtworzenia odpowiedniości procedury zbierania zgody, takich jak kopia formularza faktycznie wypełnionego przez użytkownika oraz wersja dokumentów prywatności dostępnych dla użytkownika w momencie zbierania zgody.
+#### Jak można jednoznacznie wykazać dowód ważnej zgody?
 
-**_Czy muszę przestrzegać LGPD, nawet jeśli moja organizacja nie ma siedziby w Brazylii?_** LGPD ma zasięg terytorialny, który rozciąga się poza Brazylię. Oznacza to, że możesz musieć przestrzegać przepisów, nawet jeśli Ty lub Twoja firma nie mają siedziby w Brazylii. W związku z tym pod
+Za każdym razem, gdy użytkownik wypełnia formularz na Twojej stronie/aplikacji, należy zebrać szereg informacji. Informacje te obejmują unikalny kod identyfikacyjny użytkownika, treść zaakceptowanej polityki prywatności, kopię formularza przesłanego przez użytkownika oraz zapis mechanizmu opt-in.
 
-legasz przepisom LGPD, jeśli przetwarzasz dane osobowe osób przebywających w Brazylii lub oferujesz towary i usługi osobom przebywającym w Brazylii, niezależnie od lokalizacji Twojej organizacji.
+#### Czy e-mail otrzymany od użytkownika w wyniku wypełnienia formularza nie jest wystarczającym dowodem zgody?
+
+Niestety, nie jest wystarczający, ponieważ brakuje pewnych informacji niezbędnych do odtworzenia odpowiedniości procedury zbierania zgody, takich jak kopia formularza faktycznie wypełnionego przez użytkownika oraz wersja dokumentów prywatności dostępnych dla użytkownika w momencie zbierania zgody.
+
+#### Czy muszę przestrzegać LGPD, nawet jeśli moja organizacja nie ma siedziby w Brazylii?
+
+LGPD ma zasięg terytorialny, który rozciąga się poza Brazylię. Oznacza to, że możesz musieć przestrzegać przepisów, nawet jeśli Ty lub Twoja firma nie mają siedziby w Brazylii. W związku z tym podlegasz przepisom LGPD, jeśli przetwarzasz dane osobowe osób przebywających w Brazylii lub oferujesz towary i usługi osobom przebywającym w Brazylii, niezależnie od lokalizacji Twojej organizacji.
 
 ## Zabezpiecz swoją działalność dzięki iubenda
 
