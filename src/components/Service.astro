@@ -5,7 +5,7 @@ const { imgSrc, imgAlt, text, href } = Astro.props
 ---
 
 <div>
-  <a href={href}>
+  <a href={href ? href : '#'}>
     <Image src={imgSrc} width='48' height='48' alt={imgAlt} class='icon' />
     <p class='service-text'>{text}</p>
     {href && <p class='learn-more'>Dowiedz się więcej</p>}
