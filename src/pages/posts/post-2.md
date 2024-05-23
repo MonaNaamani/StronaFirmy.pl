@@ -6,6 +6,7 @@ description: "After learning some Astro, I couldn't stop!"
 image:
     url: "/src/assets/cover.jpg"
     alt: "Thumbnail of Astro arcs."
+    credit: "Unsplash"
 pubDate: 2022-07-08
 tags: ["astro", "blogging", "learning in public", "successes"]
 ---

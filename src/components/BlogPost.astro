@@ -1,9 +1,9 @@
 ---
 import type { ImageMetadata } from 'astro'
 import { Image } from 'astro:assets'
-import scheduleIcon from '../assets/icons8-schedule-50.png'
+import { Icon } from 'astro-icon/components'
 
-const { url, title, image, description, pubDate, tags } = Astro.props
+const { url, title, image, description, pubDate, tags, index } = Astro.props
 const images = import.meta.glob<{ default: ImageMetadata }>(
   '/src/assets/*.{jpeg,jpg,png,gif}'
 )
@@ -18,7 +18,12 @@ if (!images[image.url])
     {
       image && (
         <a href={url}>
-          <Image src={images[image.url]()} alt={image.alt} width={450} />
+          <Image
+            src={images[image.url]()}
+            alt={image.alt}
+            width={450}
+            loading={index === 0 ? 'eager' : 'lazy'}
+          />
         </a>
       )
     }
@@ -26,7 +31,7 @@ if (!images[image.url])
   <div class='blog-text'>
     <div class='blog-details'>
       <div class='blog-date-icon'>
-        <Image class='blog-icon' src={scheduleIcon} alt='Schedule icon' />
+        <Icon name='calendar' size={24} />
       </div>
       <div class='blog-date'>{pubDate.toString().slice(0, 10)}</div>
     </div>

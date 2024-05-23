@@ -24,7 +24,7 @@ const pageTitle = 'StronaFirmy.pl | Blog'
   </header>
   <ul class='blog-highlight'>
     {
-      allPosts.map((post) => (
+      allPosts.map((post, index) => (
         <BlogPost
           url={post.url}
           title={post.frontmatter.title}
@@ -32,6 +32,7 @@ const pageTitle = 'StronaFirmy.pl | Blog'
           description={post.frontmatter.description}
           pubDate={post.frontmatter.pubDate}
           tags={post.frontmatter.tags}
+          index={index}
         />
       ))
     }

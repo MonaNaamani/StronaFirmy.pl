@@ -57,6 +57,7 @@ h6 {
 h1 {
   font-size: 2em;
   margin: 0.67em 0;
+  padding-bottom: 50px;
   letter-spacing: -2px;
   text-align: center;
 }

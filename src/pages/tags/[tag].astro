@@ -34,7 +34,7 @@ const { posts } = Astro.props
   </header>
   <ul class='blog-highlight'>
     {
-      posts.map((post) => (
+      posts.map((post, index) => (
         <BlogPost
           url={post.url}
           title={post.frontmatter.title}
@@ -42,6 +42,7 @@ const { posts } = Astro.props
           description={post.frontmatter.description}
           pubDate={post.frontmatter.pubDate}
           tags={post.frontmatter.tags}
+          index={index}
         />
       ))
     }
