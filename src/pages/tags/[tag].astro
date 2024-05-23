@@ -24,11 +24,14 @@ const { tag } = Astro.params
 const { posts } = Astro.props
 ---
 
-<BaseLayout title={tag} description={tag}>
+<BaseLayout
+  title={`StronaFirmy.pl | Blog | #${tag}`}
+  description={`Artykuły na temat: ${tag}`}
+>
   <header class='headline'>
     <div class='headline-text'>
       <h1 class='main-text'>
-        Posts tagged with <span class='accented-text'>{tag}</span>
+        Artykuły na temat: <span class='accented-text'>{tag}</span>
       </h1>
     </div>
   </header>

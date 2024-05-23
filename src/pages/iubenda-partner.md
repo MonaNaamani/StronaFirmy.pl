@@ -1,7 +1,7 @@
 ---
 layout: ../layouts/LandingPageLayout.astro
-title: Find out how We Can Help You Adapt Your Site or App to the Regulations
-description: Find out what makes Astro awesome!
+title: Dowiedz się, jak możemy pomóc Ci dostosować Twoją stronę lub aplikację do przepisów
+description: Strony internetowe i aplikacje muszą zawsze spełniać określone wymagania narzucone przez prawo. Niezastosowanie się do tych wymagań może skutkować poważnymi karami, w tym wysokimi grzywnami, audytami i potencjalnymi procesami sądowymi.
 ---
 # Dowiedz się, jak możemy pomóc Ci dostosować Twoją stronę lub aplikację do przepisów
 

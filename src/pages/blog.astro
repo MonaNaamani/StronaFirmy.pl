@@ -7,18 +7,16 @@ const allPosts = await Astro.glob('../pages/posts/*.md')
 const pageTitle = 'StronaFirmy.pl | Blog'
 ---
 
-<BaseLayout title={pageTitle} description='Blog'>
+<BaseLayout
+  title={pageTitle}
+  description='Blog na tematy związane z tworzeniem stron internetowych oraz tego, jak wykorzystywać stronę internetową w biznesie'
+>
   <header class='headline'>
     <div class='headline-text'>
-      <h1 class='main-text'>
-        Our own
-        <span class='accented-text'> personal blog </span>
-        right here!
-      </h1>
+      <h1 class='main-text'>Blog</h1>
       <div class='secondary-text'>
-        Are you interested in learning more about certain things? If so, you've
-        come to the right place! Content updated regularly and free of charge at
-        your disposal.
+        Blog na tematy związane z tworzeniem stron internetowych oraz tego, jak
+        wykorzystywać stronę internetową w biznesie
       </div>
     </div>
   </header>

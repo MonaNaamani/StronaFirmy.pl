@@ -15,7 +15,10 @@ if (!images[frontmatter.image.url])
   )
 ---
 
-<BaseLayout title={frontmatter.title} description={frontmatter.description}>
+<BaseLayout
+  title={`StronaFirmy.pl | ${frontmatter.title}`}
+  description={frontmatter.description}
+>
   <article>
     <div class='date'>
       <Icon name='calendar' size={24} />
