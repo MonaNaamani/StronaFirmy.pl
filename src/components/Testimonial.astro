@@ -3,6 +3,11 @@ const { name, quote, company } = Astro.props
 ---
 
 <figure>
+  <svg class='icon' xmlns='http://www.w3.org/2000/svg' viewBox='0 0 32 32'
+    ><path
+      d='M 4 8 L 4 18 L 12 18 C 12 20.21875 10.21875 22 8 22 L 8 24 C 11.300781 24 14 21.300781 14 18 L 14 8 Z M 18 8 L 18 18 L 26 18 C 26 20.21875 24.21875 22 22 22 L 22 24 C 25.300781 24 28 21.300781 28 18 L 28 8 Z M 6 10 L 12 10 L 12 16 L 6 16 Z M 20 10 L 26 10 L 26 16 L 20 16 Z'
+      fill='#10bbb5'></path></svg
+  >
   <figcaption>
     <blockquote>
       <p>
@@ -15,7 +20,6 @@ const { name, quote, company } = Astro.props
 </figure>
 
 <style>
-  @import url(https://maxcdn.bootstrapcdn.com/font-awesome/4.4.0/css/font-awesome.min.css);
   figure {
     box-shadow: 0 0 5px rgba(0, 0, 0, 0.15);
     color: #9e9e9e;
@@ -46,26 +50,21 @@ const { name, quote, company } = Astro.props
     padding: 13% 10% 12%;
   }
 
-  figcaption:before {
+  .icon {
     -webkit-transform: translateX(-50%);
     transform: translateX(-50%);
-    background-color: #fff;
+    background-color: #ffffff;
     border-radius: 50%;
     box-shadow: 0 0 10px rgba(0, 0, 0, 0.25);
-    color: var(--accentedColor);
-    content: '\f10e';
-    font-family: 'FontAwesome';
-    font-size: 32px;
-    font-style: normal;
     left: 50%;
-    line-height: 60px;
     position: absolute;
-    top: -30px;
-    width: 60px;
+    top: -25px;
+    width: 50px;
+    height: auto;
   }
 
   h3 {
-    color: #3c3c3c;
+    color: var(--secondaryText);
     font-size: 20px;
     font-weight: 300;
     line-height: 24px;
