@@ -33,18 +33,6 @@ const { posts } = Astro.props
     </div>
   </header>
   <ul class='blog-highlight'>
-    {
-      posts.map((post, index) => (
-        <BlogPost
-          url={post.url}
-          title={post.frontmatter.title}
-          image={post.frontmatter.image}
-          description={post.frontmatter.description}
-          pubDate={post.frontmatter.pubDate}
-          tags={post.frontmatter.tags}
-          index={index}
-        />
-      ))
-    }
+    {posts.map((post, index) => <BlogPost post={post} index={index} />)}
   </ul>
 </BaseLayout>

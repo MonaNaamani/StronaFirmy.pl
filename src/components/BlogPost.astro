@@ -3,24 +3,24 @@ import type { ImageMetadata } from 'astro'
 import { Image } from 'astro:assets'
 import { Icon } from 'astro-icon/components'
 
-const { url, title, image, description, pubDate, tags, index } = Astro.props
+const { post, index } = Astro.props
 const images = import.meta.glob<{ default: ImageMetadata }>(
   '/src/assets/*.{jpeg,jpg,png,gif}'
 )
-if (!images[image.url])
+if (!images[post.frontmatter.image.url])
   throw new Error(
-    `"${image.url}" does not exist in glob: "src/assets/*.{jpeg,jpg,png,gif}"`
+    `"${post.frontmatter.image.url}" does not exist in glob: "src/assets/*.{jpeg,jpg,png,gif}"`
   )
 ---
 
 <li class='blog-section'>
   <div class='blog-img'>
     {
-      image && (
-        <a href={url}>
+      post.frontmatter.image && (
+        <a href={post.url}>
           <Image
-            src={images[image.url]()}
-            alt={image.alt}
+            src={images[post.frontmatter.image.url]()}
+            alt={post.frontmatter.image.alt}
             width={450}
             loading={index === 0 ? 'eager' : 'lazy'}
           />
@@ -33,17 +33,19 @@ if (!images[image.url])
       <div class='blog-date-icon'>
         <Icon name='calendar' size={24} />
       </div>
-      <div class='blog-date'>{pubDate.toString().slice(0, 10)}</div>
+      <div class='blog-date'>
+        {post.frontmatter.pubDate.toString().slice(0, 10)}
+      </div>
     </div>
     <div class='blog-title'>
-      <a href={url}>
-        {title}
+      <a href={post.url}>
+        {post.frontmatter.title}
       </a>
     </div>
-    <div class='blog-description'>{description}</div>
+    <div class='blog-description'>{post.frontmatter.description}</div>
     <div class='tags'>
       {
-        tags.map((tag) => (
+        post.frontmatter.tags.map((tag) => (
           <a href={`/tags/${tag}`} class='tag-button'>
             {tag}
           </a>

@@ -10,14 +10,6 @@ main {
   min-height: 0 !important;
 }
 
-.main-text {
-  font-size: 42px;
-  font-weight: 700;
-  color: var(--primary);
-  letter-spacing: -2px;
-  align-self: center;
-}
-
 .blog-highlight {
   display: flex;
   flex-direction: column;

@@ -23,18 +23,6 @@ const pageTitle = 'StronaFirmy.pl | Blog'
     </div>
   </header>
   <ul class='blog-highlight'>
-    {
-      allPosts.map((post, index) => (
-        <BlogPost
-          url={post.url}
-          title={post.frontmatter.title}
-          image={post.frontmatter.image}
-          description={post.frontmatter.description}
-          pubDate={post.frontmatter.pubDate}
-          tags={post.frontmatter.tags}
-          index={index}
-        />
-      ))
-    }
+    {allPosts.map((post, index) => <BlogPost post={post} index={index} />)}
   </ul>
 </BaseLayout>
