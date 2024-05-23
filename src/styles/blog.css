@@ -65,7 +65,15 @@ main {
   color: var(--primaryText);
   letter-spacing: -0.5px;
   line-height: 1.3;
+  text-decoration: none;
+  color: var(--primaryText);
 }
+
+.blog-title > a {
+  color: var(--primaryText);
+  text-decoration: none;
+}
+
 
 .blog-title > a:visited {
   color: var(--primaryText);
@@ -96,6 +104,8 @@ main {
   border-radius: 0.5em;
   padding: 0.5em 1em;
   background-color: #f8fcfd;
+  text-decoration: none;
+  color: var(--primaryText);
 }
 
 .tag-button:hover {

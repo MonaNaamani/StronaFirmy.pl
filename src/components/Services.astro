@@ -1,46 +1,46 @@
 ---
 import Service from './Service.astro'
 
-import domainImage from '../assets/icons8-domain-48.png'
-import myBusinessImage from '../assets/icons8-my-business-48.png'
-import googleImage from '../assets/icons8-google-48.png'
-import privacyPolicyImage from '../assets/icons8-privacy-policy-48.png'
-import functionImage from '../assets/icons8-function-48.png'
+import domainImage from '../assets/icons8-domain-96.png'
+import myBusinessImage from '../assets/icons8-my-business-96.png'
+import googleImage from '../assets/icons8-google-96.png'
+import privacyPolicyImage from '../assets/icons8-privacy-policy-96.png'
+import functionImage from '../assets/icons8-function-96.png'
 ---
 
 <section aria-labelledby='services'>
   <h2 class='section-header' id='services'>
     Co jeszcze możemy dla Ciebie zrobić?
   </h2>
-  <Service
-    imgSrc={domainImage}
-    imgAlt='Ikona domeny internetowej'
-    text='Nie masz własnej domeny internetowej? Zajmiemy się jej rejestracją!'
-  />
-  <Service
-    imgSrc={myBusinessImage}
-    imgAlt='Ikona Google Moja Firma'
-    text='Założenie profilu Google Moja Firma'
-  />
-  <Service
-    imgSrc={privacyPolicyImage}
-    imgAlt='Ikona polityki prywatności'
-    text={`Przygotowanie i wymagane prawnie aktualizacje Polityki Prywatności i
-          Polityki Plików Cookie`}
-    href='/iubenda-partner'
-  />
-  <Service
-    imgSrc={googleImage}
-    imgAlt='Logo Google'
-    text={`Zgłoszenie i monitorowanie pozycji witryny w wynikach wyszukiwania
-        Google`}
-  />
-  <Service
-    imgSrc={functionImage}
-    imgAlt='Ikona kół zębatych'
-    ]
-    text='Integracja dodatkowej funcjonalności, np. czatu na żywo'
-  />
+  <div class='flex-container'>
+    <Service
+      imgSrc={domainImage}
+      title='Rejestracja domeny internetowej'
+      text='Nie masz własnej domeny internetowej? Zajmiemy się jej rejestracją!'
+    />
+    <Service
+      imgSrc={myBusinessImage}
+      title='Załozenie profilu Google Moja Firma'
+      text='Prowadzisz lokalny biznes? Profil Google Twoja Firma pozwoli Twoim klientom łatwo Cię znaleźć.'
+    />
+    <Service
+      imgSrc={privacyPolicyImage}
+      title='Polityka Prywatności'
+      text={`Przygotujemy i zapewnimy wymagane prawnie aktualizacje Polityki Prywatności i
+          Polityki Plików Cookie.`}
+      href='/iubenda-partner'
+    />
+    <Service
+      imgSrc={googleImage}
+      title='Optymalizacja wyszukiwania Google'
+      text={`Zgłosimy Twoją stronę do wyszukiwarki Google i będziemy monitorować jej pozycję w wynikach wyszukiwania.`}
+    />
+    <Service
+      imgSrc={functionImage}
+      title='Dodatkowa funcjonalność'
+      text='Jeśli potrzebujesz dodatkowej funcjonalności, np. czatu na żywo, doradzimy jakie rozwiązanie wybrać i zintegrujemy je dla Ciebie.'
+    />
+  </div>
 </section>
 
 <style>
@@ -48,6 +48,7 @@ import functionImage from '../assets/icons8-function-48.png'
     display: flex;
     flex-direction: column;
     align-items: center;
-    background-color: var(--whiteBackground);
+    background-color: var(--accentedBackground);
+    padding: 100px 40px;
   }
 </style>
