@@ -1,8 +1,16 @@
 ---
+import type { ImageMetadata } from 'astro'
 import { Image } from 'astro:assets'
-import scheduleIcon from '../images/icons8-schedule-50.png'
+import scheduleIcon from '../assets/icons8-schedule-50.png'
 
 const { url, title, image, description, pubDate, tags } = Astro.props
+const images = import.meta.glob<{ default: ImageMetadata }>(
+  '/src/assets/*.{jpeg,jpg,png,gif}'
+)
+if (!images[image.url])
+  throw new Error(
+    `"${image.url}" does not exist in glob: "src/assets/*.{jpeg,jpg,png,gif}"`
+  )
 ---
 
 <li class='blog-section'>
@@ -10,7 +18,7 @@ const { url, title, image, description, pubDate, tags } = Astro.props
     {
       image && (
         <a href={url}>
-          <Image src={image.url} alt={image.alt} width={360} height={240} />
+          <Image src={images[image.url]()} alt={image.alt} width={450} />
         </a>
       )
     }
