@@ -27,6 +27,16 @@ if (!images[post.frontmatter.image.url])
         </a>
       )
     }
+    {
+      post.frontmatter.image.credit && (
+        <p class='blog-img-credit'>
+          Autor:
+          <a href={post.frontmatter.image.creditUrl}>
+            {post.frontmatter.image.credit}
+          </a>
+        </p>
+      )
+    }
   </div>
   <div class='blog-text'>
     <div class='blog-details'>
