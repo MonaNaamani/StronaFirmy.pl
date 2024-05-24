@@ -79,7 +79,7 @@ import BaseLayout from '../layouts/BaseLayout.astro'
         </label>
         <div class='h-captcha' data-captcha='true' data-lang='pl' id='captcha'>
         </div>
-        <button type='submit' id='submit' class='button-style'>Wyślij</button>
+        <button type='submit' id='submit' class='button'>Wyślij</button>
         <div id='result'></div>
       </div>
     </form>
@@ -200,11 +200,6 @@ import BaseLayout from '../layouts/BaseLayout.astro'
     padding: 5px;
   }
 
-  .checkbox-style {
-    display: flex;
-    gap: 10px;
-  }
-
   label {
     font-size: 18px;
     color: var(--primaryText);
@@ -235,36 +230,9 @@ import BaseLayout from '../layouts/BaseLayout.astro'
     align-self: center;
   }
 
-  #submit {
-    appearance: none;
-    background-color: var(--primaryText);
-    border: 1px solid rgba(27, 31, 35, 0.15);
-    border-radius: 6px;
-    box-shadow: rgba(27, 31, 35, 0.1) 0 1px 0;
-    box-sizing: border-box;
-    color: #fff;
-    cursor: pointer;
-    display: inline-block;
-    font-size: 14px;
-    font-weight: 600;
-    line-height: 20px;
-    padding: 6px 16px;
-    position: relative;
-    text-align: center;
-    text-decoration: none;
-    user-select: none;
-    -webkit-user-select: none;
-    touch-action: manipulation;
-    vertical-align: middle;
-    white-space: nowrap;
-    width: 100px;
-    align-self: center;
+  .button {
     margin-top: 20px;
-  }
-
-  #submit:hover {
-    background-color: var(--accentedColor);
-    color: #bb1016;
+    align-self: center;
   }
 
   #result {

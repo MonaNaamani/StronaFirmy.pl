@@ -156,21 +156,6 @@ article ul {
   color: var(--secondaryText);
 }
 
-.button-style {
-  background-color: var(--accentedColor);
-  background-image: linear-gradient(1deg, var(--accentedColor), #0f9793 99%);
-  border-radius: 100px;
-  border-width: 0;
-  box-shadow: none;
-  color: var(--inactiveElement);
-  cursor: pointer;
-  font-family: sans-serif;
-  font-size: 1rem;
-  padding: 6px 20px;
-  text-align: center;
-  text-decoration: none;
-}
-
 .section {
   display: flex;
   flex-direction: column;
@@ -198,4 +183,57 @@ article ul {
 
 .accented-text {
   color: var(--accentedText);
+}
+
+.button {
+  background-color: #36a9ae;
+  background-image: linear-gradient(#37adb2, #329ca0);
+  border: 1px solid #2a8387;
+  border-radius: 4px;
+  box-shadow: rgba(0, 0, 0, 0.12) 0 1px 1px;
+  color: #ffffff;
+  cursor: pointer;
+  display: block;
+  font-family: -apple-system, '.SFNSDisplay-Regular', 'Helvetica Neue',
+    Helvetica, Arial, sans-serif;
+  font-size: 17px;
+  line-height: 100%;
+  margin: 0;
+  outline: 0;
+  padding: 11px 15px 12px;
+  text-align: center;
+  transition:
+    box-shadow 0.05s ease-in-out,
+    opacity 0.05s ease-in-out;
+  user-select: none;
+  -webkit-user-select: none;
+  touch-action: manipulation;
+  text-decoration: none;
+}
+
+.button:hover {
+  box-shadow:
+    rgba(255, 255, 255, 0.3) 0 0 2px inset,
+    rgba(0, 0, 0, 0.4) 0 1px 2px;
+  text-decoration: none;
+  transition-duration: 0.15s, 0.15s;
+}
+
+.button:active {
+  box-shadow:
+    rgba(0, 0, 0, 0.15) 0 2px 4px inset,
+    rgba(0, 0, 0, 0.4) 0 1px 1px;
+}
+
+.button:disabled {
+  cursor: not-allowed;
+  opacity: 0.6;
+}
+
+a:disabled:active {
+  pointer-events: none;
+}
+
+a:disabled:hover {
+  box-shadow: none;
 }
