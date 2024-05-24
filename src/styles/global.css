@@ -37,7 +37,7 @@
   --separator: #e4e4e4;
   --inactiveElement: #ececec;
   --whiteBackground: #f5f5f7;
-  --footerBackground: #1d1d1d;;
+  --footerBackground: #040404;;
 }
 
 * {
@@ -67,7 +67,7 @@ main {
 }
 
 a {
-  color: var(--accentedColor);
+  color: var(--accentedText);
   text-decoration: dotted underline;
 }
 
