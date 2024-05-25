@@ -9,6 +9,7 @@ export interface Props {
 }
 
 const { title = 'StronaFirmy.pl', description = '' } = Astro.props as Props
+const canonicalURL = new URL(Astro.url.pathname, Astro.site)
 ---
 
 <!doctype html>
@@ -21,6 +22,7 @@ const { title = 'StronaFirmy.pl', description = '' } = Astro.props as Props
     <meta name='theme-color' content='#096360' />
     <meta name='description' content={description} />
     <title>{title}</title>
+    <link rel='canonical' href={canonicalURL} />
     <link rel='icon' type='image/x-icon' href='/favicon.ico' />
     <link
       rel='alternate'
