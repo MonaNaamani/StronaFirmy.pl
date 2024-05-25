@@ -9,9 +9,9 @@
     prosty proces. W przeciwieństwie do typowego projektanta nie pozostawimy Cię
     samego lub samej z gotową stroną po zakończeniu projektu. Na każdym etapie
     wszystkim albo zajmiemy się sami, albo doradzimy, tak abyś mógł lub mogła
-    skupić się na rozwijaniu swojego biznesu. Nasz proces składa się z 4
-    prostych kroków:
+    skupić się na rozwijaniu swojego biznesu.
   </p>
+  <p class='secondary-text'>Nasz proces składa się z 4 prostych kroków:</p>
   <ol class='stepper'>
     <li>Zbieramy od Ciebie wszystkie potrzebne informacje</li>
     <li>Budujemy stronę dopasowaną do Twoich potrzeb</li>
@@ -76,6 +76,15 @@
     top: calc((var(--circle) - var(--b)) / 2);
     width: 100vw;
     background: var(--active-b);
+  }
+
+  .secondary-text {
+    text-align: justify;
+    hyphens: auto;
+
+    @media screen and (min-width: 600px) {
+      text-align: center;
+    }
   }
 
   @media (max-width: 1130px) {
