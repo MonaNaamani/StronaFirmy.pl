@@ -77,7 +77,12 @@ import BaseLayout from '../layouts/BaseLayout.astro'
             height='100'
           />
         </label>
-        <div class='h-captcha' data-captcha='true' data-lang='pl-PL' id='captcha'>
+        <div
+          class='h-captcha'
+          data-captcha='true'
+          data-lang='pl-PL'
+          id='captcha'
+        >
         </div>
         <button type='submit' id='submit' class='button'>Wyślij</button>
         <div id='result'></div>
@@ -149,7 +154,7 @@ import BaseLayout from '../layouts/BaseLayout.astro'
 <style>
   .contact-section {
     margin-inline: auto;
-    margin-top: 20px;
+    margin-top: 80px;
     max-width: 600px;
     margin-right: min(50px, 5%);
     margin-left: min(50px, 5%);
@@ -164,6 +169,7 @@ import BaseLayout from '../layouts/BaseLayout.astro'
     padding: 20px 40px;
     gap: 20px;
     border-radius: 10px;
+    box-shadow: 0 0 10px rgba(0, 0, 0, 0.25);
   }
 
   .contact-highlight {
