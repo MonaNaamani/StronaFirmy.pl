@@ -77,13 +77,12 @@ import BaseLayout from '../layouts/BaseLayout.astro'
             height='100'
           />
         </label>
-        <div
-          class='h-captcha'
-          data-captcha='true'
-          data-lang='pl-PL'
-          id='captcha'
-        >
-        </div>
+        <input
+          type='checkbox'
+          name='botcheck'
+          class='hidden'
+          style='display: none;'
+        />
         <button type='submit' id='submit' class='button'>Wyślij</button>
         <div id='result'></div>
       </div>
@@ -96,19 +95,6 @@ import BaseLayout from '../layouts/BaseLayout.astro'
   const result = document.getElementById('result')
 
   form.addEventListener('submit', function (e) {
-    const hCaptcha = form.querySelector(
-      'textarea[name=h-captcha-response]'
-    ).value
-
-    if (!hCaptcha) {
-      e.preventDefault()
-      result.innerHTML = 'Proszę potwierdzić, że jesteś człowiekiem!'
-      setTimeout(() => {
-        result.innerHTML = ''
-      }, 3000)
-      return
-    }
-
     const formData = new FormData(form)
     e.preventDefault()
 
@@ -146,10 +132,6 @@ import BaseLayout from '../layouts/BaseLayout.astro'
       })
   })
 </script>
-
-<!-- hCaptcha -->
-<script is:inline src='https://web3forms.com/client/script.js' async defer
-></script>
 
 <style>
   .contact-section {
