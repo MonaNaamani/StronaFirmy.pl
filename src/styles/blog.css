@@ -40,7 +40,7 @@ main {
 
 .blog-img > a > img {
   height: auto;
-  max-width: 85vw;
+  max-width: 70vw;
   border-radius: 8px;
 
   @media screen and (min-width: 720px) {
