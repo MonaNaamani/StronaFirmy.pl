@@ -45,6 +45,7 @@ if (!images[frontmatter.image.url])
       )
     }
 
+    <slot />
     <div class='tags'>
       {
         frontmatter.tags.map((tag) => (
@@ -54,7 +55,6 @@ if (!images[frontmatter.image.url])
         ))
       }
     </div>
-    <slot />
   </article>
 </BaseLayout>
 
