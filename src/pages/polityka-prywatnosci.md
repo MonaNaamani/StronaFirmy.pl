@@ -1,7 +1,7 @@
 ---
 layout: ../layouts/LandingPageLayout.astro
-title: Dowiedz się, jak możemy pomóc Ci dostosować Twoją stronę lub aplikację do przepisów
-description: Strony internetowe i aplikacje muszą zawsze spełniać określone wymagania narzucone przez prawo. Niezastosowanie się do tych wymagań może skutkować poważnymi karami, w tym wysokimi grzywnami, audytami i potencjalnymi procesami sądowymi.
+title: Zawsze aktualna polityka prywatności i polityka cookies
+description: Dowiedz się, jak możemy pomóc Ci dostosować Twoją stronę lub aplikację do przepisów RODO dot. polityki prywatności i polityki cookies
 ---
 # Dowiedz się, jak możemy pomóc Ci dostosować Twoją stronę lub aplikację do przepisów
 

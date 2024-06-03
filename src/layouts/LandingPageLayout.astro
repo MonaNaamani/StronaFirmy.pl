@@ -4,11 +4,19 @@ const { frontmatter } = Astro.props
 ---
 
 <BaseLayout
-  title={`StronaFirmy.pl | ${frontmatter.title}`}
+  title={`${frontmatter.title}`}
   description={frontmatter.description}
 >
   <article>
     <slot />
-    <!-- Markdown content is injected here -->
+    <div class='flex-container'>
+      <a href='/kontakt' class='button'>Napisz do nas</a>
+    </div>
   </article>
 </BaseLayout>
+
+<style>
+  .button {
+    margin-top: 50px;
+  }
+</style>
