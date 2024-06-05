@@ -1,5 +1,5 @@
 ---
-const { name, quote, company } = Astro.props
+const { name, quote, company, href } = Astro.props
 ---
 
 <figure>
@@ -15,7 +15,7 @@ const { name, quote, company } = Astro.props
       </p>
     </blockquote>
     <h3>{name}</h3>
-    <h4>{company}</h4>
+    <a href={href} target='_blank'>{company}</a>
   </figcaption>
 </figure>
 
@@ -26,7 +26,7 @@ const { name, quote, company } = Astro.props
     display: inline-block;
     font-size: 16px;
     margin: 35px 10px 10px;
-    max-width: 310px;
+    max-width: 80vw;
     min-width: 250px;
     position: relative;
     text-align: center;
@@ -36,6 +36,10 @@ const { name, quote, company } = Astro.props
     border-top: 5px solid var(--accentedColor);
     display: flex;
     flex-direction: column;
+
+    @media screen and (min-width: 720px) {
+      max-width: 550px;
+    }
   }
 
   figure *,
@@ -47,7 +51,8 @@ const { name, quote, company } = Astro.props
   }
 
   figcaption {
-    padding: 13% 10% 12%;
+    /*padding: 13% 10% 12%;*/
+    padding: 50px 30px;
   }
 
   .icon {
@@ -71,7 +76,7 @@ const { name, quote, company } = Astro.props
     margin: 10px 0 5px;
   }
 
-  h4 {
+  a {
     font-weight: 400;
     margin: 0;
     color: var(--accentedText);
