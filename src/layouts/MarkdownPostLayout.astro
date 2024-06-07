@@ -3,6 +3,7 @@ import BaseLayout from './BaseLayout.astro'
 import type { ImageMetadata } from 'astro'
 import { Image } from 'astro:assets'
 import { Icon } from 'astro-icon/components'
+import Newsletter from '../components/Newsletter.astro'
 import '../styles/blog.css'
 
 const { frontmatter } = Astro.props
@@ -56,6 +57,7 @@ if (!images[frontmatter.image.url])
       }
     </div>
   </article>
+  <Newsletter />
 </BaseLayout>
 
 <style>
@@ -65,7 +67,8 @@ if (!images[frontmatter.image.url])
     justify-content: right;
   }
   .tags {
-    margin: 20px 0;
+    margin-top: 20px;
+    margin-bottom: -50px;
   }
 
   .img {

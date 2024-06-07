@@ -1,6 +1,7 @@
 ---
 import BaseLayout from '../layouts/BaseLayout.astro'
 import BlogPost from '../components/BlogPost.astro'
+import Newsletter from '../components/Newsletter.astro'
 import '../styles/blog.css'
 
 const allPosts = await Astro.glob('../pages/blog/*.md')
@@ -23,4 +24,5 @@ const pageTitle = 'StronaFirmy.pl | Blog'
   <ul class='blog-highlight'>
     {allPosts.map((post, index) => <BlogPost post={post} index={index} />)}
   </ul>
+  <Newsletter />
 </BaseLayout>
