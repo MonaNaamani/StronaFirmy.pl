@@ -57,7 +57,7 @@ Jeśli Twoja firma opiera się głównie na działalności na platformach zewnę
 
 ### Ograniczony budżet
 
-Jeśli Twoja firma dysponuje bardzo ograniczonym budżetem, koszty związane z stworzeniem i utrzymaniem profesjonalnej strony internetowej mogą być zbyt wysokie. Warto wtedy rozważyć alternatywne formy obecności online, takie jak profile na portalach społecznościowych czy lokalne katalogi firm lub **stronę internetową w przystępnym abonamencie** - jeśli uważasz, że to dobre Ciebie rozwiązanie, [napisz do nas](/kontakt)!
+Jeśli Twoja firma dysponuje bardzo ograniczonym budżetem, koszty związane z stworzeniem i utrzymaniem profesjonalnej strony internetowej mogą być zbyt wysokie. Warto wtedy rozważyć alternatywne formy obecności online, takie jak profile na portalach społecznościowych czy lokalne katalogi firm lub **stronę internetową w przystępnym abonamencie** - jeśli uważasz, że to dobre Ciebie rozwiązanie, [napisz do nas](/kontakt/)!
 
 ## Podsumowanie
 
