@@ -1,5 +1,7 @@
 ---
 import { Image } from 'astro:assets'
+import tawkTo from '../assets/tawk-to-badge.svg'
+import iubenda from '../assets/iubenda-badge.png'
 ---
 
 <section class='section' aria-labelledby='partners'>
@@ -7,7 +9,7 @@ import { Image } from 'astro:assets'
   <div class='flex-container'>
     <a href='https://www.tawk.to/?pid=f5bzmbn' target='_blank'
       ><Image
-        src='https://partners.tawk.to/badges/partner.svg'
+        src={tawkTo}
         width='150'
         height='120'
         alt='Tawk.to Partner Badge'
@@ -16,7 +18,7 @@ import { Image } from 'astro:assets'
     <!-- iubenda Certified Partner Badge - Large -->
     <a href='/polityka-prywatnosci/' title='iubenda Certified Bronze Partner'
       ><Image
-        src='https://www.iubenda.com/partner/bronze@2x.png'
+        src={iubenda}
         alt='iubenda Certified Bronze Partner'
         width='306'
         height='108'
