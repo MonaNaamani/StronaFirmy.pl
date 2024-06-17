@@ -12,11 +12,15 @@ export const { getStaticPaths, GET } = OGImageRoute({
   getImageOptions: (path, page) => ({
     title: page.frontmatter.title,
     description: page.frontmatter.description,
-    border: { color: [114, 221, 64], width: 20, side: 'inline-start' },
+    border: { color: [10, 117, 113], width: 20, side: 'inline-start' },
     bgGradient: [
-      [6, 38, 45],
-      [8, 3, 2],
+      [55, 210, 233],
+      [167, 241, 248],
     ],
     fonts: ['./public/fonts/poppins-v21-latin_latin-ext-regular.woff2'],
+    font: {
+      title: { color: [49, 49, 49] },
+      description: { color: [49, 49, 49] },
+    },
   }),
 })
