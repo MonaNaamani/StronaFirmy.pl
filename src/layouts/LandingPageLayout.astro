@@ -1,11 +1,13 @@
 ---
 import BaseLayout from './BaseLayout.astro'
 const { frontmatter } = Astro.props
+const imgLink = `${Astro.site.origin}/open-graph/${frontmatter.slug}.png`
 ---
 
 <BaseLayout
   title={`${frontmatter.title}`}
   description={frontmatter.description}
+  imgLink={imgLink}
 >
   <article>
     <slot />
