@@ -50,7 +50,7 @@ Mimo licznych zalet, są sytuacje, w których posiadanie strony internetowej mo�
 
 ### Małe, lokalne firmy
 
-Jeśli prowadzisz małą firmę, której działalność ogranicza się do małego, lokalnego rynku i masz stałą bazę lojalnych klientów, strona internetowa może nie być niezbędna. W takich przypadkach, marketing szeptany i tradycyjne metody reklamowe mogą być wystarczające. W takim przypadku zdecydowanie warto rozważyć przynajmniej założenie profilu Google Moja Firma aby ułatwkić lokalnym klientom zapoznanie się z Twoimi usługami.
+Jeśli prowadzisz małą firmę, której działalność ogranicza się do małego, lokalnego rynku i masz stałą bazę lojalnych klientów, strona internetowa może nie być niezbędna. W takich przypadkach, marketing szeptany i tradycyjne metody reklamowe mogą być wystarczające. W takim przypadku zdecydowanie warto rozważyć przynajmniej założenie profilu Google Moja Firma aby ułatwić lokalnym klientom zapoznanie się z Twoimi usługami.
 
 ### Działalność oparta na platformach zewnętrznych
 
