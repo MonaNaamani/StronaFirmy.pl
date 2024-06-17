@@ -31,6 +31,27 @@ const canonicalURL = new URL(Astro.url.pathname, Astro.site)
       href={`${Astro.site}rss.xml`}
     />
     <link rel='sitemap' href='/sitemap-index.xml' />
+
+    <!-- Facebook Meta Tags -->
+    <meta property='og:url' content={canonicalURL} />
+    <meta property='og:type' content='website' />
+    <meta property='og:title' content={title} />
+    <meta property='og:description' content={description} />
+    <meta property='og:image' content='https://stronafirmy.pl/open-graph.png' />
+
+    <!-- Twitter Meta Tags -->
+    <meta name='twitter:card' content='summary_large_image' />
+    <meta property='twitter:domain' content='stronafirmy.pl' />
+    <meta property='twitter:url' content={canonicalURL} />
+    <meta name='twitter:title' content={title} />
+    <meta name='twitter:description' content={description} />
+    <meta
+      name='twitter:image'
+      content='https://stronafirmy.pl/open-graph.png'
+    />
+
+    <!-- WhatsApp Meta Tags -->
+    <meta property='og:site_name' content='StronaFirmy.pl' />
   </head>
   <body>
     <Navigation />
