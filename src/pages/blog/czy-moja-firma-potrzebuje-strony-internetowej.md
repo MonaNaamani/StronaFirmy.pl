@@ -1,14 +1,15 @@
 ---
 layout: ../../layouts/MarkdownPostLayout.astro
 title: Czy moja firma potrzebuje strony internetowej?
-description: "W poniższym artykule przyjrzymy się najważniejszym zaletom posiadania firmowej strony internetowej oraz omówimy sytuacje, w których strona internetowa może nie być konieczna."
+description: W poniższym artykule przyjrzymy się najważniejszym zaletom posiadania firmowej strony internetowej oraz omówimy sytuacje, w których strona internetowa może nie być konieczna.
 image:
-    url: "/src/assets/john-schnobrich-FlPc9_VocJ4-unsplash.jpg"
-    alt: "Dwie osoby dyskutują na temat propozycji wyświetlonej na ekranie laptopa"
-    credit: "John Schnobrich"
+    url: /src/assets/john-schnobrich-FlPc9_VocJ4-unsplash.jpg
+    alt: Dwie osoby dyskutują na temat propozycji wyświetlonej na ekranie laptopa
+    credit: John Schnobrich
     creditUrl: "https://unsplash.com/@johnishappysometimes"
 pubDate: 2024-05-25
 tags: [strony www]
+slug: czy-moja-firma-potrzebuje-strony-internetowej
 ---
 
 ## Zalety posiadania firmowej strony internetowej
