@@ -14,7 +14,8 @@ if (!images[frontmatter.image.url])
   throw new Error(
     `"${frontmatter.image.url}" does not exist in glob: "src/assets/*.{jpeg,jpg,png,gif}"`
   )
-const imgLink = `${Astro.site.origin}/open-graph/blog/${frontmatter.slug}.png`
+const imgLink =
+  `${Astro.site.origin}/open-graph/blog/${frontmatter.slug}.png` || ''
 ---
 
 <BaseLayout

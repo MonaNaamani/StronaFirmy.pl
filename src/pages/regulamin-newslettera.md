@@ -2,6 +2,7 @@
 layout: ../layouts/LandingPageLayout.astro
 title: Regulamin newslettera
 description: Regulamin newslettera StronaFirmy.pl
+slug: regulamin-newslettera
 ---
 
 # Regulamin Newslettera StronaFirmy.pl

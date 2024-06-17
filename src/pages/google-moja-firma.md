@@ -2,6 +2,7 @@
 layout: ../layouts/LandingPageLayout.astro
 title: Założenie Profilu Google Moja Firma
 description: Zwiększ widoczność swojej firmy z profilem Google Moja Firma! Skorzystaj z usługi założenia profilu firmy bez dodatkowych opłat.
+slug: google-moja-firma
 ---
 
 # Zwiększ Widoczność Swojej Firmy z Profilem Google Moja Firma!

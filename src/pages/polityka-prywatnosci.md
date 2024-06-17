@@ -2,6 +2,7 @@
 layout: ../layouts/LandingPageLayout.astro
 title: Zawsze aktualna polityka prywatności i polityka cookies
 description: Dowiedz się, jak możemy pomóc Ci dostosować Twoją stronę lub aplikację do przepisów RODO dot. polityki prywatności i polityki cookies
+slug: polityka-prywatnosci
 ---
 # Dowiedz się, jak możemy pomóc Ci dostosować Twoją stronę lub aplikację do przepisów
 
