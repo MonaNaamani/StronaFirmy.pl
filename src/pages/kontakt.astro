@@ -96,139 +96,148 @@ import BaseLayout from '../layouts/BaseLayout.astro'
         <div id='result'></div>
       </div>
     </form>
+    <div class='flex-container'>
+      <p>
+        Możesz też do nas napisać na <a href='mailto:kontakt@stronafirmy.pl'
+          >kontakt@stronafirmy.pl</a
+        >
+      </p>
+    </div>
+
+    <div></div>
   </div>
-</BaseLayout>
 
-<script is:inline>
-  const form = document.getElementById('form')
-  const result = document.getElementById('result')
+  <script is:inline>
+    const form = document.getElementById('form')
+    const result = document.getElementById('result')
 
-  form.addEventListener('submit', function (e) {
-    const formData = new FormData(form)
-    e.preventDefault()
+    form.addEventListener('submit', function (e) {
+      const formData = new FormData(form)
+      e.preventDefault()
 
-    const object = Object.fromEntries(formData)
-    const json = JSON.stringify(object)
+      const object = Object.fromEntries(formData)
+      const json = JSON.stringify(object)
 
-    result.innerHTML = 'Proszę chwilę poczekać...'
+      result.innerHTML = 'Proszę chwilę poczekać...'
 
-    fetch('https://api.web3forms.com/submit', {
-      method: 'POST',
-      headers: {
-        'Content-Type': 'application/json',
-        Accept: 'application/json',
-      },
-      body: json,
+      fetch('https://api.web3forms.com/submit', {
+        method: 'POST',
+        headers: {
+          'Content-Type': 'application/json',
+          Accept: 'application/json',
+        },
+        body: json,
+      })
+        .then(async (response) => {
+          let json = await response.json()
+          if (response.status == 200) {
+            result.innerHTML = 'Wiadomość wysłana, dziękujemy!'
+          } else {
+            console.log(response)
+            result.innerHTML = json.message
+          }
+        })
+        .catch((error) => {
+          console.log(error)
+          result.innerHTML = 'Coś poszło nie tak!'
+        })
+        .then(function () {
+          form.reset()
+          setTimeout(() => {
+            result.style.display = 'none'
+          }, 3000)
+        })
     })
-      .then(async (response) => {
-        let json = await response.json()
-        if (response.status == 200) {
-          result.innerHTML = 'Wiadomość wysłana, dziękujemy!'
-        } else {
-          console.log(response)
-          result.innerHTML = json.message
-        }
-      })
-      .catch((error) => {
-        console.log(error)
-        result.innerHTML = 'Coś poszło nie tak!'
-      })
-      .then(function () {
-        form.reset()
-        setTimeout(() => {
-          result.style.display = 'none'
-        }, 3000)
-      })
-  })
-</script>
+  </script>
 
-<style>
-  .contact-section {
-    margin-inline: auto;
-    margin-top: 80px;
-    max-width: 600px;
-    margin-right: min(50px, 5%);
-    margin-left: min(50px, 5%);
-    align-self: center;
-  }
+  <style>
+    .contact-section {
+      margin-inline: auto;
+      margin-top: 80px;
+      max-width: 600px;
+      margin-right: min(50px, 5%);
+      margin-left: min(50px, 5%);
+      align-self: center;
+    }
 
-  #form {
-    display: flex;
-    flex-direction: column;
-    justify-content: center;
-    background-color: var(--accentedBackground);
-    padding: 20px 40px;
-    gap: 20px;
-    border-radius: 10px;
-    box-shadow: 0 0 10px rgba(0, 0, 0, 0.25);
-  }
+    #form {
+      display: flex;
+      flex-direction: column;
+      justify-content: center;
+      background-color: var(--accentedBackground);
+      padding: 20px 40px;
+      gap: 20px;
+      border-radius: 10px;
+      box-shadow: 0 0 10px rgba(0, 0, 0, 0.25);
+    }
 
-  .contact-highlight {
-    display: flex;
-    flex-direction: column;
-    justify-content: center;
-    align-items: center;
-  }
+    .contact-highlight {
+      display: flex;
+      flex-direction: column;
+      justify-content: center;
+      align-items: center;
+    }
 
-  .contact-title {
-    font-size: 42px;
-    font-weight: 700;
-    color: var(--primaryText);
-    letter-spacing: -2px;
-  }
+    .contact-title {
+      font-size: 42px;
+      font-weight: 700;
+      color: var(--primaryText);
+      letter-spacing: -2px;
+    }
 
-  .contact-description {
-    font-size: 20px;
-    color: #575757;
-  }
+    .contact-description {
+      font-size: 20px;
+      color: #575757;
+    }
 
-  .contact-content,
-  #checkbox,
-  #textarea {
-    display: flex;
-    flex-direction: column;
-    gap: 10px;
-  }
+    .contact-content,
+    #checkbox,
+    #textarea {
+      display: flex;
+      flex-direction: column;
+      gap: 10px;
+    }
 
-  textarea {
-    border-radius: 10px;
-    font-size: 14px;
-    line-height: 28px;
-    padding: 10px;
-  }
+    textarea {
+      border-radius: 10px;
+      font-size: 14px;
+      line-height: 28px;
+      padding: 10px;
+    }
 
-  label {
-    font-size: 18px;
-    color: var(--primaryText);
-    display: flex;
-    flex-wrap: wrap;
-    gap: 10px 10px;
-    flex-direction: column;
-    margin-top: 20px;
-  }
+    label {
+      font-size: 18px;
+      color: var(--primaryText);
+      display: flex;
+      flex-wrap: wrap;
+      gap: 10px 10px;
+      flex-direction: column;
+      margin-top: 20px;
+    }
 
-  label > select,
-  label > input {
-    padding: 10px;
-    color: #575757;
-    background-color: #ffffff;
-    border-radius: 10px;
-    border: 1px solid rgb(27, 31, 35);
-    font-size: 14px;
-    line-height: 28px;
-  }
+    label > select,
+    label > input {
+      padding: 10px;
+      color: #575757;
+      background-color: #ffffff;
+      border-radius: 10px;
+      border: 1px solid rgb(27, 31, 35);
+      font-size: 14px;
+      line-height: 28px;
+    }
 
-  .checkbox-style > p {
-    color: #414141;
-  }
+    .checkbox-style > p {
+      color: #414141;
+    }
 
-  .button {
-    margin-top: 40px;
-    align-self: center;
-  }
+    .button {
+      margin-top: 40px;
+      align-self: center;
+    }
 
-  #result {
-    text-align: center;
-    padding: 20px;
-  }
-</style>
+    #result {
+      text-align: center;
+      padding: 20px;
+    }
+  </style>
+</BaseLayout>
