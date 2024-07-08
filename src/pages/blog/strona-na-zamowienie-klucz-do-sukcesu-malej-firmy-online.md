@@ -59,7 +59,7 @@ Pamiętaj, że Twoja strona internetowa to często pierwsze wrażenie, jakie pot
 
 ## Korzyści ze strony na zamówienie
 
-![laptop z kodem strony internetowej](/src/assets/christopher-gower-m_HRfLhgABo-unsplash.jpg)
+![laptop z kodem strony internetowej](../../assets/christopher-gower-m_HRfLhgABo-unsplash.jpg)
 Autor:  [Christopher Gower](https://unsplash.com/@cgower)
 
 Decydując się na stronę tworzoną na zamówienie, inwestujesz w narzędzie, które może znacząco wpłynąć na sukces Twojego biznesu. Przyjrzyjmy się bliżej głównym zaletom takiego rozwiązania:
@@ -119,7 +119,7 @@ Pamiętaj, że w dzisiejszym konkurencyjnym środowisku online, każda przewaga 
 
 ## Lepsza widoczność w internecie
 
-![fragment strony internetowej przedstawiający statystyki odwiedzin](/src/assets/agence-olloweb-qfp4-Ud6Fyg-unsplash.jpg)
+![fragment strony internetowej przedstawiający statystyki odwiedzin](../../assets/agence-olloweb-qfp4-Ud6Fyg-unsplash.jpg)
 Autor:  [Agence Olloweb](https://unsplash.com/@olloweb)
 
 W dzisiejszym cyfrowym świecie być widocznym online to klucz do sukcesu. Strona na zamówienie może znacząco poprawić Twoją obecność w internecie. Oto jak:
@@ -179,7 +179,7 @@ Inwestując w stronę na zamówienie, inwestujesz w długoterminową strategię 
 
 ## Bezpieczeństwo i integracja z innymi narzędziami
 
-![przymknięty laptop w ciemnym pokoju](/src/assets/philipp-katzenberger-iIJrUoeRoCQ-unsplash.jpg)
+![przymknięty laptop w ciemnym pokoju](../../assets/philipp-katzenberger-iIJrUoeRoCQ-unsplash.jpg)
 Autor:  [Philipp Katzenberger](https://unsplash.com/@fantasyflip)
 
 W dzisiejszym cyfrowym świecie bezpieczeństwo danych i efektywna integracja z różnymi narzędziami biznesowymi są kluczowe dla sukcesu każdej firmy. Strona na zamówienie oferuje znaczące korzyści w obu tych obszarach.
@@ -241,7 +241,7 @@ Inwestując w stronę na zamówienie, inwestujesz nie tylko w wygląd i funkcjon
 
 ## Porównanie z kreatorami stron
 
-![waga z dwoma szalami](/src/assets/elena-mozhvilo-j06gLuKK0GM-unsplash.jpg)
+![waga z dwoma szalami](../../assets/elena-mozhvilo-j06gLuKK0GM-unsplash.jpg)
 Autor:  [Elena Mozhvilo](https://unsplash.com/@miracleday)
 
 Kreatory stron są popularnym wyborem wśród małych firm ze względu na niski koszt początkowy i pozorną łatwość użycia. Jednak mają one swoje ograniczenia, które mogą wpływać na długoterminowy sukces Twojej obecności online. Przyjrzyjmy się bliżej różnicom między kreatorami a stronami tworzonymi na zamówienie.
@@ -315,7 +315,7 @@ Wybierając między kreatorem a stroną na zamówienie, zastanów się nad dług
 
 ## Jak powstaje strona na zamówienie?
 
-![dwie kobiety dyskutują na temat strony internetowej otwartej na komputerze](/src/assets/kobu-agency-7okkFhxrxNw-unsplash.jpg)
+![dwie kobiety dyskutują na temat strony internetowej otwartej na komputerze](../../assets/kobu-agency-7okkFhxrxNw-unsplash.jpg)
 Autor:  [KOBU Agency](https://unsplash.com/@kobuagency)
 
 Process tworzenia strony na zamówienie może wydawać się skomplikowany, ale w rzeczywistości jest to uporządkowany ciąg działań, w którym jako właściciel firmy masz kluczową rolę. Oto jak wygląda ten process krok po kroku:
@@ -361,7 +361,7 @@ Inwestycja czasu i zaangażowania w process tworzenia strony na zamówienie zwr�
 
 ## Podsumowanie
 
-![dwie osoby w strojach biznesowych przybijają piątkę nad otwartym laptopem](/src/assets/krakenimages-376KN_ISplE-unsplash.jpg)
+![dwie osoby w strojach biznesowych przybijają piątkę nad otwartym laptopem](../../assets/krakenimages-376KN_ISplE-unsplash.jpg)
 Autor:  [krakenimages](https://unsplash.com/@krakenimages)
 
 Wybór między stroną na zamówienie a gotowym rozwiązaniem to ważna decyzja dla każdego właściciela małej firmy. Podsumujmy najważniejsze aspekty, które przemawiają za inwestycją w stronę na zamówienie:
