@@ -244,7 +244,7 @@ Inwestując w stronę na zamówienie, inwestujesz nie tylko w wygląd i funkcjon
 ![waga z dwoma szalami](../../assets/elena-mozhvilo-j06gLuKK0GM-unsplash.jpg)
 Autor:  [Elena Mozhvilo](https://unsplash.com/@miracleday)
 
-Kreatory stron takie jak [Carrd](https://try.carrd.co/zzvhl8x7) są popularnym wyborem wśród małych firm ze względu na niski koszt początkowy i pozorną łatwość użycia. Jednak mają one swoje ograniczenia, które mogą wpływać na długoterminowy sukces Twojej obecności online. Przyjrzyjmy się bliżej różnicom między kreatorami a stronami tworzonymi na zamówienie.
+Kreatory stron takie jak [Carrd](https://try.carrd.co/zzvhl8x7) czy [WebWave](https://webwavecms.com/ref/16004801259) są popularnym wyborem wśród małych firm ze względu na niski koszt początkowy i pozorną łatwość użycia. Jednak mają one swoje ograniczenia, które mogą wpływać na długoterminowy sukces Twojej obecności online. Przyjrzyjmy się bliżej różnicom między kreatorami a stronami tworzonymi na zamówienie.
 
 ### Ograniczenia kreatorów
 
@@ -309,7 +309,7 @@ Kluczowe zalety strony na zamówienie:
 - Możliwość ciągłego rozwoju i dostosowywania
 - Profesjonalny wizerunek Twojej firmy
 
-Pamiętaj, że choć kreatory stron typu [Carrd](https://try.carrd.co/zzvhl8x7) mogą wydawać się atrakcyjne na początku, strona na zamówienie to inwestycja w przyszłość Twojego biznesu. Daje Ci ona narzędzia i elastyczność potrzebne do skutecznego konkurowania w dynamicznym środowisku online.
+Pamiętaj, że choć kreatory stron typu [Carrd](https://try.carrd.co/zzvhl8x7) lub [WebWave](https://webwavecms.com/ref/16004801259) mogą wydawać się atrakcyjne na początku, strona na zamówienie to inwestycja w przyszłość Twojego biznesu. Daje Ci ona narzędzia i elastyczność potrzebne do skutecznego konkurowania w dynamicznym środowisku online.
 
 Wybierając między kreatorem a stroną na zamówienie, zastanów się nad długoterminowymi celami Twojego biznesu i tym, jak Twoja obecność online może pomóc Ci je osiągnąć.
 
