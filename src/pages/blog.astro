@@ -5,6 +5,10 @@ import Newsletter from '../components/Newsletter.astro'
 import '../styles/blog.css'
 
 const allPosts = await Astro.glob('../pages/blog/*.md')
+allPosts.sort(
+  (a, b) =>
+    Date.parse(b.frontmatter.pubDate) - Date.parse(a.frontmatter.pubDate)
+)
 const pageTitle = 'StronaFirmy.pl | Blog'
 ---
 

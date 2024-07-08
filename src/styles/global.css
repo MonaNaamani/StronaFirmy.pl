@@ -127,8 +127,15 @@ article {
   }
 }
 
+article img {
+  max-width: 100%;
+  height: auto;
+  border-radius: 8px;
+}
+
 p,
-ul {
+ul,
+ol {
   font-size: 16px;
   line-height: 26px;
   text-align: justify;
@@ -147,8 +154,21 @@ ul, ol {
 }
 
 article p,
-article ul {
+article ul,
+article ol {
+  margin-bottom: 16px;
+}
+
+table {
+  margin-top: 20px;
   margin-bottom: 20px;
+  border-collapse: collapse;
+  overflow-x:auto;
+
+  @media screen and (min-width: 600px) {
+    font-size: 18px;
+    line-height: 30px;
+  }
 }
 
 .headline {
