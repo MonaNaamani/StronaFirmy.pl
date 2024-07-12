@@ -8,7 +8,7 @@ slug: polityka-prywatnosci
 
 Strony internetowe i aplikacje muszą zawsze spełniać określone wymagania narzucone przez prawo. Niezastosowanie się do tych wymagań może skutkować poważnymi karami, w tym wysokimi grzywnami, audytami i potencjalnymi procesami sądowymi.
 
-Z tego powodu **zdecydowaliśmy się polegać na [iubenda](https://iubenda.refr.cc/a3d9b06c)**, firmie zbudowanej na ekspertyzie prawnej i technicznej, która specjalizuje się w tej dziedzinie. Wraz z [iubenda](https://iubenda.refr.cc/a3d9b06c), której jesteśmy Certyfikowanymi Partnerami, opracowaliśmy propozycję oferującą wszystkim naszym klientom prostą i bezpieczną odpowiedź na ich potrzeby zgodności.
+Z tego powodu **zdecydowaliśmy się polegać na [iubenda](https://iubenda.refr.cc/default/u/stronafirmy)**, firmie zbudowanej na ekspertyzie prawnej i technicznej, która specjalizuje się w tej dziedzinie. Wraz z [iubenda](https://iubenda.refr.cc/default/u/stronafirmy), której jesteśmy Certyfikowanymi Partnerami, opracowaliśmy propozycję oferującą wszystkim naszym klientom prostą i bezpieczną odpowiedź na ich potrzeby zgodności.
 
 ## Przegląd głównych wymagań prawnych dla właścicieli stron internetowych i aplikacji
 
@@ -82,18 +82,18 @@ Niestety, nie jest wystarczający, ponieważ brakuje pewnych informacji niezbęd
 
 LGPD ma zasięg terytorialny, który rozciąga się poza Brazylię. Oznacza to, że możesz musieć przestrzegać przepisów, nawet jeśli Ty lub Twoja firma nie mają siedziby w Brazylii. W związku z tym podlegasz przepisom LGPD, jeśli przetwarzasz dane osobowe osób przebywających w Brazylii lub oferujesz towary i usługi osobom przebywającym w Brazylii, niezależnie od lokalizacji Twojej organizacji.
 
-## Zabezpiecz swoją działalność dzięki [iubenda](https://iubenda.refr.cc/a3d9b06c)
+## Zabezpiecz swoją działalność dzięki [iubenda](https://iubenda.refr.cc/default/u/stronafirmy)
 
 W związku z częstymi aktualizacjami wymogów regulacyjnych i licznymi wymaganiami obowiązującymi w różnych krajach, upewnienie się, że Twoja strona/aplikacja jest zawsze zgodna z przepisami, może być trudnym zadaniem.
 
 Iubenda oferuje szeroki zakres rozwiązań, które pomagają właścicielom stron internetowych i aplikacji zarządzać zgodnością. Są to:
 
-- **[iubenda](https://iubenda.refr.cc/a3d9b06c) Compliance Solutions**, obejmujące Polityki Prywatności i Plików Cookie, Bannery Plików Cookie i Mechanizmy Zarządzania Zgodą, Narzędzia do Zgodności z CCPA i wiele innych.
+- **[iubenda](https://iubenda.refr.cc/default/u/stronafirmy) Compliance Solutions**, obejmujące Polityki Prywatności i Plików Cookie, Bannery Plików Cookie i Mechanizmy Zarządzania Zgodą, Narzędzia do Zgodności z CCPA i wiele innych.
 - **Aktualizacje Prawne i Technologiczne**, które gwarantują, że Twoje dokumenty i systemy zgodności są zawsze aktualne z najnowszymi przepisami.
 - **Integracja z Popularnymi Platformami**, takimi jak WordPress, Shopify, Wix i wieloma innymi, co ułatwia instalację i konfigurację.
 
-Jako Certyfikowani Partnerzy [iubenda](https://iubenda.refr.cc/a3d9b06c), oferujemy nasze wsparcie i doświadczenie, aby pomóc Ci zrozumieć Twoje obowiązki prawne i w pełni je spełniać. Wykorzystując [iubenda](https://iubenda.refr.cc/a3d9b06c), Twoja strona internetowa lub aplikacja będą nie tylko zgodne z przepisami, ale również zapewnią użytkownikom poczucie bezpieczeństwa i zaufania, co jest kluczowe dla długoterminowego sukcesu w Internecie.
+Jako Certyfikowani Partnerzy [iubenda](https://iubenda.refr.cc/default/u/stronafirmy), oferujemy nasze wsparcie i doświadczenie, aby pomóc Ci zrozumieć Twoje obowiązki prawne i w pełni je spełniać. Wykorzystując [iubenda](https://iubenda.refr.cc/default/u/stronafirmy), Twoja strona internetowa lub aplikacja będą nie tylko zgodne z przepisami, ale również zapewnią użytkownikom poczucie bezpieczeństwa i zaufania, co jest kluczowe dla długoterminowego sukcesu w Internecie.
 
 ### Skontaktuj się z nami, aby dowiedzieć się więcej
 
-Jeśli chcesz dowiedzieć się więcej o tym, jak możemy pomóc Ci dostosować Twoją stronę lub aplikację do przepisów z pomocą [iubenda](https://iubenda.refr.cc/a3d9b06c), skontaktuj się z nami już dziś. Nasi specjaliści są gotowi, aby odpowiedzieć na wszelkie pytania i pomóc Ci zabezpieczyć swoją działalność online.
+Jeśli chcesz dowiedzieć się więcej o tym, jak możemy pomóc Ci dostosować Twoją stronę lub aplikację do przepisów z pomocą [iubenda](https://iubenda.refr.cc/default/u/stronafirmy), skontaktuj się z nami już dziś. Nasi specjaliści są gotowi, aby odpowiedzieć na wszelkie pytania i pomóc Ci zabezpieczyć swoją działalność online.
