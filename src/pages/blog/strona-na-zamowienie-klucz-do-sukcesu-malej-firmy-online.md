@@ -7,7 +7,7 @@ image:
     alt: Dwie osoby dyskutują na temat projektu strony internetowej
     credit: Scott Graham
     creditUrl: "https://unsplash.com/@homajob"
-pubDate: 2024-07-24
+pubDate: 2024-06-24
 tags: [strony www, kreatory stron, strona na zamówienie]
 slug: strona-na-zamowienie-klucz-do-sukcesu-malej-firmy-online
 ---

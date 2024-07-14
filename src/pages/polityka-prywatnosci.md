@@ -4,7 +4,7 @@ title: Zawsze aktualna polityka prywatności i polityka cookies
 description: Dowiedz się, jak możemy pomóc Ci dostosować Twoją stronę lub aplikację do przepisów RODO dot. polityki prywatności i polityki cookies
 slug: polityka-prywatnosci
 ---
-# Dowiedz się, jak możemy pomóc Ci dostosować Twoją stronę lub aplikację do przepisów
+# Polityka prywatności wymagana przez RODO
 
 Strony internetowe i aplikacje muszą zawsze spełniać określone wymagania narzucone przez prawo. Niezastosowanie się do tych wymagań może skutkować poważnymi karami, w tym wysokimi grzywnami, audytami i potencjalnymi procesami sądowymi.
 
