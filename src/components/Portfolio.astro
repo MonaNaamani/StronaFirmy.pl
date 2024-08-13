@@ -1,94 +1,113 @@
 ---
 import { Image } from 'astro:assets'
 import amtbtImg from '../assets/amtbt.png'
+import toscanaImg from '../assets/pizzeriatoscana.png'
 ---
 
 <section aria-labelledby='portfolio'>
   <h2 class='section-header' id='portfolio'>Wybrane realizacje</h2>
   <div class='flex-container'>
-    <a href='https://amtbt.eu/pl' target='_blank'>
-      <Image
-        src={amtbtImg}
-        alt='amtbt.eu website'
-        width={1280}
-        height={960}
-        class='img'
-      />
-    </a>
-    <div class='description'>
-      <h3>AMT Materiały Budowlane</h3>
-      <p>
-        AMT jest dostawcą materiałów budowlanych i wykończeniowych na terenie
-        Polski, Niemiec, Danii oraz Norwegii.
-      </p>
-      <a href='https://amtbt.eu/pl' target='_blank' class='button'
-        >Odwiedź AMT</a
-      >
+    <div class='item'>
+      <a href='https://pizzeriatoscana.stronafirmy.pl' target='_blank'>
+        <Image
+          src={toscanaImg}
+          alt='podgląd strony pizzerii Toscana'
+          width={400}
+          class='img'
+        />
+      </a>
+      <div class='description'>
+        <h3>Pizzeria Toscana</h3>
+        <p>Mała, przytulna pizzeria w sercu Białej Podlaskiej.</p>
+        <a
+          href='https://pizzeriatoscana.stronafirmy.pl'
+          target='_blank'
+          class='button'>Odwiedź Pizzerię Toscana</a
+        >
+      </div>
+    </div>
+    <div class='item'>
+      <a href='https://amtbt.eu/pl' target='_blank'>
+        <Image
+          src={amtbtImg}
+          alt='podgląd strony amtbt.eu'
+          width={400}
+          class='img'
+        />
+      </a>
+      <div class='description'>
+        <h3>AMT Materiały Budowlane</h3>
+        <p>
+          AMT jest dostawcą materiałów budowlanych i wykończeniowych na terenie
+          Polski, Niemiec, Danii oraz Norwegii.
+        </p>
+        <a href='https://amtbt.eu/pl' target='_blank' class='button'
+          >Odwiedź AMT</a
+        >
+      </div>
     </div>
   </div>
+
+  <style>
+    section {
+      align-items: center;
+      background-color: var(--whiteBackground);
+      padding-bottom: 50px;
+      padding-top: 50px;
+    }
+
+    .flex-container {
+      gap: 10px;
+      margin: 0 80px;
+    }
+    .item {
+      display: flex;
+      flex-direction: column;
+      align-items: center;
+      gap: 20px;
+      background-color: var(--whiteBackground);
+      border-radius: 8px;
+      max-width: 400px;
+      background-color: var(--accentedBackground);
+      padding-left: 20px;
+      padding-right: 20px;
+      padding-top: 50px;
+      padding-bottom: 50px;
+      border-radius: 10px;
+      margin: 40px;
+      box-shadow: 0 0 10px rgba(0, 0, 0, 0.25);
+      justify-content: center;
+    }
+
+    .img {
+      height: auto;
+      max-width: 65vw;
+      border-radius: 8px;
+      align-self: center;
+
+      @media screen and (min-width: 720px) {
+        padding: 20px;
+        max-width: 450px;
+      }
+    }
+
+    .description {
+      display: flex;
+      flex-direction: column;
+      align-self: left;
+      gap: 20px;
+      padding-left: 20px;
+      padding-right: 20px;
+    }
+
+    p {
+      text-align: justify;
+      hyphens: auto;
+    }
+
+    .button {
+      margin-top: 20px;
+      align-self: center;
+    }
+  </style>
 </section>
-
-<style>
-  section {
-    align-items: center;
-    background-color: var(--whiteBackground);
-    padding-bottom: 50px;
-    padding-top: 50px;
-  }
-
-  .flex-container {
-    display: flex;
-    flex-direction: column;
-    align-items: center;
-    background-color: var(--accentedBackground);
-    padding-left: 20px;
-    padding-right: 20px;
-    padding-top: 50px;
-    padding-bottom: 50px;
-    gap: 20px;
-    border-radius: 10px;
-    margin: 40px;
-    box-shadow: 0 0 10px rgba(0, 0, 0, 0.25);
-
-    @media screen and (min-width: 720px) {
-      flex-direction: row;
-      max-width: 60vw;
-      margin: auto;
-    }
-
-    @media screen and (min-width: 1024px) {
-      max-width: 40vw;
-    }
-  }
-
-  .img {
-    height: auto;
-    max-width: 65vw;
-    border-radius: 8px;
-    align-self: center;
-
-    @media screen and (min-width: 720px) {
-      padding: 20px;
-      max-width: 450px;
-    }
-  }
-
-  .description {
-    display: flex;
-    flex-direction: column;
-    align-self: left;
-    gap: 20px;
-    padding-left: 20px;
-    padding-right: 20px;
-  }
-
-  p {
-    text-align: justify;
-    hyphens: auto;
-  }
-
-  .button {
-    margin-top: 20px;
-    align-self: center;
-  }
-</style>
